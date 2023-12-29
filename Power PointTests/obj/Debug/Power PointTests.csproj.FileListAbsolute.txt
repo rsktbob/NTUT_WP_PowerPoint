@@ -1,0 +1,104 @@
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Power PointTests.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Power PointTests.pdb
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\大學課程\110590038\Power PointTests\bin\Debug\Power Point.exe
+D:\大學課程\110590038\Power PointTests\bin\Debug\Power Point.pdb
+D:\大學課程\110590038\Power PointTests\bin\Debug\Power Point.exe.config
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\大學課程\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\大學課程\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+D:\大學課程\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+D:\大學課程\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CopyComplete
+D:\大學課程\110590038\Power PointTests\obj\Debug\Power PointTests.dll
+D:\大學課程\110590038\Power PointTests\obj\Debug\Power PointTests.pdb
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Power PointTests.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Power PointTests.pdb
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Power Point.exe
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Power Point.pdb
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Power Point.exe.config
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\bob10\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\bob10\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+C:\Users\bob10\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+C:\Users\bob10\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CopyComplete
+C:\Users\bob10\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.dll
+C:\Users\bob10\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.pdb
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Power PointTests.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Power PointTests.pdb
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Power Point.exe
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Power Point.pdb
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Power Point.exe.config
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+d:\Documents\Desktop\110590038\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+d:\Documents\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+d:\Documents\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+d:\Documents\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.csproj.CopyComplete
+d:\Documents\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.dll
+d:\Documents\Desktop\110590038\Power PointTests\obj\Debug\Power PointTests.pdb
+D:\C#\hw6\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+D:\C#\hw6\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+D:\C#\hw6\Power PointTests\obj\Debug\Power PointTests.dll
+D:\C#\hw6\Power PointTests\obj\Debug\Power PointTests.pdb
+C:\大學課程\視窗程式設計\hw6\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+C:\大學課程\視窗程式設計\hw6\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+C:\大學課程\視窗程式設計\hw6\Power PointTests\obj\Debug\Power PointTests.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\obj\Debug\Power PointTests.pdb
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Power PointTests.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Power PointTests.pdb
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Power Point.exe.config
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\大學課程\視窗程式設計\hw6\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\大學課程\視窗程式設計\hw6\Power PointTests\obj\Debug\Power PointTests.csproj.CopyComplete
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Power PointTests.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Power PointTests.pdb
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Power Point.exe.config
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\大學課程\視窗程式設計\hw7\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\大學課程\視窗程式設計\hw7\Power PointTests\obj\Debug\Power PointTests.csproj.AssemblyReference.cache
+C:\大學課程\視窗程式設計\hw7\Power PointTests\obj\Debug\Power PointTests.csproj.CoreCompileInputs.cache
+C:\大學課程\視窗程式設計\hw7\Power PointTests\obj\Debug\Power PointTests.csproj.CopyComplete
+C:\大學課程\視窗程式設計\hw7\Power PointTests\obj\Debug\Power PointTests.dll
+C:\大學課程\視窗程式設計\hw7\Power PointTests\obj\Debug\Power PointTests.pdb

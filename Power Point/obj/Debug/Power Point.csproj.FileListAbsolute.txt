@@ -1,0 +1,32 @@
+C:\大學課程\視窗程式設計\hw6\Power Point\bin\Debug\Power Point.exe.config
+C:\大學課程\視窗程式設計\hw6\Power Point\bin\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw6\Power Point\bin\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power Point.csproj.AssemblyReference.cache
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power_Point.Form.resources
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power_Point.Properties.Resources.resources
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power Point.csproj.GenerateResource.cache
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power Point.csproj.CoreCompileInputs.cache
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw6\Power Point\obj\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Power Point.exe.config
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power_Point.Form.resources
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power_Point.Properties.Resources.resources
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.csproj.GenerateResource.cache
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.csproj.CoreCompileInputs.cache
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.exe
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.csproj.AssemblyReference.cache
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power_Point.AddShapeForm.resources
+d:\Documents\Desktop\hw7\Power Point\bin\Debug\Power Point.exe.config
+d:\Documents\Desktop\hw7\Power Point\bin\Debug\Power Point.exe
+d:\Documents\Desktop\hw7\Power Point\bin\Debug\Power Point.pdb
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.csproj.AssemblyReference.cache
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power_Point.AddShapeForm.resources
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power_Point.Form.resources
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power_Point.Properties.Resources.resources
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.csproj.GenerateResource.cache
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.csproj.CoreCompileInputs.cache
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.exe
+d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.pdb
