@@ -289,5 +289,18 @@ namespace Power_Point
             _presentationModel.AddShape(arguments.ShapeType, arguments.Point1, arguments.Point2);
             UpdateAllPagesAndCanvasPaint();
         }
+
+        // Click upload button
+        private void ClickUploadButton(object sender, EventArgs e)
+        {
+            UploadForm uploadForm = new UploadForm();
+            uploadForm.Show();
+        }
+
+        // Click download button
+        private void ClickdownloadButton(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1018,6 +1018,118 @@
               <Comment />
               <Auto>false</Auto>
             </Smell>
+            <Smell>
+              <Id>53</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 Execute 缺乏註解</SmellType>
+              <HashCode>Power Point\Power Point.InsertPageCommand.cs.Unresolved warnings(忽視警告)-函式 Execute 缺乏註解.22</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point\Power Point</Project>
+              <File>InsertPageCommand.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>54</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 ReverseExecute 缺乏註解</SmellType>
+              <HashCode>Power Point\Power Point.InsertPageCommand.cs.Unresolved warnings(忽視警告)-函式 ReverseExecute 缺乏註解.27</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point\Power Point</Project>
+              <File>InsertPageCommand.cs</File>
+              <Line>27</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>55</Id>
+              <SmellType>Unresolved warnings(忽視警告)-函式 UpdatePageSelected 缺乏註解</SmellType>
+              <HashCode>Power Point\Power Point.Form.cs.Unresolved warnings(忽視警告)-函式 UpdatePageSelected 缺乏註解.267</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point\Power Point</Project>
+              <File>Form.cs</File>
+              <Line>267</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>56</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 Power_Point.InsertPageCommand.Execute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>InsertPageCommand.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>Power_Point.InsertPageCommand.Execute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>57</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>27 Power_Point.InsertPageCommand.ReverseExecute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>InsertPageCommand.cs</File>
+              <Line>27</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>Power_Point.InsertPageCommand.ReverseExecute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>58</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>267 Power_Point.Form.UpdatePageSelected()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>Form.cs</File>
+              <Line>267</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>Power_Point.Form.UpdatePageSelected()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>59</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>161 目前物件 Power_Point.Model，使用物件的方法或屬性次數：1次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageSelectedShapeIndex 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\Model\Model.cs</File>
+              <Line>161</Line>
+              <StartLine>160</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>161</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.Model，使用物件的方法或屬性次數：1次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageSelectedShapeIndex 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</Comment>
+              <Auto>false</Auto>
+            </Smell>
           </Reviews>
           <HashCodeIgnoreList />
           <HashCodeRequestIgnoreList />
@@ -1275,7 +1387,7 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>2916</ProductionLoc>
+          <ProductionLoc>2956</ProductionLoc>
           <TestLoc>1544</TestLoc>
         </CodeReview>
       </Data>

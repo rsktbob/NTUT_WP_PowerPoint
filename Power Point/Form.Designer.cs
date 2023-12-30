@@ -48,12 +48,12 @@ namespace Power_Point
             this._addPageButton = new System.Windows.Forms.ToolStripButton();
             this._undoButton = new System.Windows.Forms.ToolStripButton();
             this._redoButton = new System.Windows.Forms.ToolStripButton();
+            this._uploadButton = new System.Windows.Forms.ToolStripButton();
+            this._downloadButton = new System.Windows.Forms.ToolStripButton();
             this._canvasBackground = new System.Windows.Forms.Panel();
             this._canvas = new Power_Point.DoubleBufferedPanel();
             this._leftBorder = new System.Windows.Forms.Splitter();
             this._rightBorder = new System.Windows.Forms.Splitter();
-            this._uploadButton = new System.Windows.Forms.ToolStripButton();
-            this._downloadButton = new System.Windows.Forms.ToolStripButton();
             this._menuStrip.SuspendLayout();
             this._dataGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._shapeDataGridView)).BeginInit();
@@ -254,6 +254,26 @@ namespace Power_Point
             this._redoButton.Text = "toolStripButton2";
             this._redoButton.Click += new System.EventHandler(this.ClickRedoButton);
             // 
+            // _uploadButton
+            // 
+            this._uploadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._uploadButton.Image = ((System.Drawing.Image)(resources.GetObject("_uploadButton.Image")));
+            this._uploadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._uploadButton.Name = "_uploadButton";
+            this._uploadButton.Size = new System.Drawing.Size(23, 22);
+            this._uploadButton.Text = "toolStripButton1";
+            this._uploadButton.Click += new System.EventHandler(this.ClickUploadButton);
+            // 
+            // _downloadButton
+            // 
+            this._downloadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._downloadButton.Image = ((System.Drawing.Image)(resources.GetObject("_downloadButton.Image")));
+            this._downloadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._downloadButton.Name = "_downloadButton";
+            this._downloadButton.Size = new System.Drawing.Size(23, 22);
+            this._downloadButton.Text = "toolStripButton2";
+            this._downloadButton.Click += new System.EventHandler(this.ClickdownloadButton);
+            // 
             // _canvasBackground
             // 
             this._canvasBackground.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -295,24 +315,6 @@ namespace Power_Point
             this._rightBorder.Size = new System.Drawing.Size(3, 665);
             this._rightBorder.TabIndex = 14;
             this._rightBorder.TabStop = false;
-            // 
-            // _uploadButton
-            // 
-            this._uploadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._uploadButton.Image = ((System.Drawing.Image)(resources.GetObject("_uploadButton.Image")));
-            this._uploadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this._uploadButton.Name = "_uploadButton";
-            this._uploadButton.Size = new System.Drawing.Size(23, 22);
-            this._uploadButton.Text = "toolStripButton1";
-            // 
-            // _downloadButton
-            // 
-            this._downloadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._downloadButton.Image = ((System.Drawing.Image)(resources.GetObject("_downloadButton.Image")));
-            this._downloadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this._downloadButton.Name = "_downloadButton";
-            this._downloadButton.Size = new System.Drawing.Size(23, 22);
-            this._downloadButton.Text = "toolStripButton2";
             // 
             // Form
             // 
