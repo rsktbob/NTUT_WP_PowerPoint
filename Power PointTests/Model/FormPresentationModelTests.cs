@@ -214,7 +214,7 @@ namespace Power_Point.Tests
             _formPresentationModel.HandlePointerPressed(18, 30);
             _formPresentationModel.HandlePointerReleased(18, 30);
 
-            _formPresentationModel.DeleteSelectedShape();
+            _formPresentationModel.PressDelete();
             Assert.AreEqual(0, _formPresentationModel.CurrentShapeManager.Count);
         }
 

@@ -71,10 +71,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddShapeForm.cs">
+    <Compile Include="Commands\DeletePageCommand.cs" />
+    <Compile Include="ModalWindow\AddShapeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddShapeForm.Designer.cs">
+    <Compile Include="ModalWindow\AddShapeForm.Designer.cs">
       <DependentUpon>AddShapeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Commands\AddCommand.cs" />
@@ -87,15 +88,15 @@
     <Compile Include="Components\DoubleBufferPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UploadForm.cs">
+    <Compile Include="ModalWindow\UploadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UploadForm.Designer.cs">
+    <Compile Include="ModalWindow\UploadForm.Designer.cs">
       <DependentUpon>UploadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GoogleDriveService.cs" />
     <Compile Include="Interface\ICommand.cs" />
-    <Compile Include="Pages.cs" />
+    <Compile Include="Page\Pages.cs" />
     <Compile Include="ShapeEventArguments.cs" />
     <Compile Include="State\DrawingState.cs" />
     <Compile Include="Interface\IState.cs" />
@@ -116,16 +117,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shape\Rectangle.cs" />
     <Compile Include="Shape\Shape.cs" />
-    <Compile Include="Shape\Shapes.cs" />
+    <Compile Include="Page\Shapes.cs" />
     <Compile Include="State\PointState.cs" />
     <Compile Include="Symbol.cs" />
-    <EmbeddedResource Include="AddShapeForm.resx">
+    <EmbeddedResource Include="ModalWindow\AddShapeForm.resx">
       <DependentUpon>AddShapeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UploadForm.resx">
+    <EmbeddedResource Include="ModalWindow\UploadForm.resx">
       <DependentUpon>UploadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

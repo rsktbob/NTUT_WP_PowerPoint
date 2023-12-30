@@ -10,7 +10,6 @@ namespace Power_Point
 {
     public class Model
     {
-        public event ModelChangedEventHandler _modelChanged;
         public delegate void ModelChangedEventHandler();
         private Shape _hint;
         private Pages _pages;
@@ -38,14 +37,8 @@ namespace Power_Point
         // Get ModelChangee
         public ModelChangedEventHandler ModelChanged
         {
-            get
-            {
-                return _modelChanged;
-            }
-            set
-            {
-                _modelChanged = value;
-            }
+            get;
+            set;
         }
 
         // Get IsScaling
@@ -80,7 +73,7 @@ namespace Power_Point
         {
             get
             {
-                return (double)CanvasWidth / Symbol.CANVAS_WIDTH;
+                return (double)CanvasSize.Width / Symbol.CANVAS_WIDTH;
             }
         }
 
@@ -89,7 +82,7 @@ namespace Power_Point
         {
             get
             {
-                return (double)PageWidth / Symbol.CANVAS_WIDTH;
+                return (double)PageSize.Height / Symbol.CANVAS_WIDTH;
             }
         }
 
@@ -102,32 +95,16 @@ namespace Power_Point
             }
         }
 
-        // Get canvas width
-        public int CanvasWidth
+        public Size CanvasSize
         {
             get;
-            private set;
+            set;
         }
 
-        // Get canvas height
-        public int CanvasHeight
+        public Size PageSize
         {
             get;
-            private set;
-        }
-
-        // Get page width
-        public int PageWidth
-        {
-            get;
-            private set;
-        }
-
-        // Get page height
-        public int PageHeight
-        {
-            get;
-            private set;
+            set;
         }
 
         public Model()
@@ -200,18 +177,15 @@ namespace Power_Point
             NotifyModelChanged();
         }
 
-        // Set canvas size
-        public void SetCanvasSize(int width, int height)
+        // Push delete current page command
+        public void PushDeleteCurrentPageCommand()
         {
-            CanvasWidth = width;
-            CanvasHeight = height;
-        }
-
-        // Set page size
-        public void SetPageSize(int width, int height)
-        {
-            PageWidth = width;
-            PageHeight = height;
+            if (_pages.CurrentPageIndex != -1)
+            {
+                ICommand command = new DeletePageCommand(_pages, _pages.CurrentPageIndex);
+                _commandManager.ExecuteCommand(command);
+                NotifyModelChanged();
+            }
         }
 
         // Draw canvas
@@ -290,9 +264,9 @@ namespace Power_Point
         // Notify model changed
         private void NotifyModelChanged()
         {
-            if (_modelChanged != null)
+            if (ModelChanged != null)
             {
-                _modelChanged();
+                ModelChanged();
             }
         }
 
@@ -308,6 +282,19 @@ namespace Power_Point
         {
             _commandManager.Redo();
             NotifyModelChanged();
+        }
+
+        // Press delete
+        public void PressDelete()
+        {
+            if (_pages.CurrentPageSelectedShapeIndex != -1)
+            {
+                PushDeleteSelectedCommand();
+            }
+            else if (_pages.CurrentPageIndex != -1 && _pages.PageManager.Count != 1)
+            {
+                PushDeleteCurrentPageCommand();
+            }
         }
 
         // Set current page index

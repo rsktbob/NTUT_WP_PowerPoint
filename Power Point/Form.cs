@@ -68,7 +68,8 @@ namespace Power_Point
         {
             if (e.KeyCode == Keys.Delete)
             {
-                _presentationModel.DeleteSelectedShape();
+                _presentationModel.PressDelete();
+                UpdatePageSelected();
                 UpdatePanel();
             }
         }

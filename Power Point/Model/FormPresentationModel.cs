@@ -57,7 +57,7 @@ namespace Power_Point
         {
             get
             {
-                return _model.CanvasWidth;
+                return _model.CanvasSize.Width;
             }
         }
 
@@ -66,7 +66,7 @@ namespace Power_Point
         {
             get
             {
-                return _model.CanvasHeight;
+                return _model.CanvasSize.Height;
             }
         }
 
@@ -75,7 +75,7 @@ namespace Power_Point
         {
             get
             {
-                return _model.PageWidth;
+                return _model.PageSize.Width;
             }
         }
 
@@ -84,7 +84,7 @@ namespace Power_Point
         {
             get
             {
-                return _model.PageHeight;
+                return _model.PageSize.Height;
             }
         }
 
@@ -180,9 +180,9 @@ namespace Power_Point
         }
 
         // Press delete
-        public void DeleteSelectedShape()
+        public void PressDelete()
         {
-            _model.PushDeleteSelectedCommand();
+            _model.PressDelete();
         }
 
         // Cancel all state
@@ -215,13 +215,13 @@ namespace Power_Point
         // Set canvas size
         public void SetCanvasSize(int width, int height)
         {
-            _model.SetCanvasSize(width, height);
+            _model.CanvasSize = new Size(width, height);
         }
 
         // Set small canvas size
         public void SetPageSize(int width, int height)
         {
-            _model.SetPageSize(width, height);
+            _model.PageSize = new Size(width, height);
         }
 
         // Handele point pressed
