@@ -52,40 +52,18 @@ namespace Power_Point
             }
         }
 
-        // Get canvas width
-        public int CanvasWidth
+        // Get canvas size
+        public Size CanvasSize
         {
-            get
-            {
-                return _model.CanvasSize.Width;
-            }
+            get;
+            private set;
         }
 
-        // Get canvas height
-        public int CanvasHeight
+        // Get page size
+        public Size PageSize
         {
-            get
-            {
-                return _model.CanvasSize.Height;
-            }
-        }
-
-        // Get page width
-        public int PageWidth
-        {
-            get
-            {
-                return _model.PageSize.Width;
-            }
-        }
-
-        // Get page height
-        public int PageHeight
-        {
-            get
-            {
-                return _model.PageSize.Height;
-            }
+            get;
+            private set;
         }
 
         // Get page count
@@ -212,12 +190,6 @@ namespace Power_Point
             _model.SetState(action);
         }
 
-        // Set canvas size
-        public void SetCanvasSize(int width, int height)
-        {
-            _model.CanvasSize = new Size(width, height);
-        }
-
         // Set small canvas size
         public void SetPageSize(int width, int height)
         {
@@ -272,10 +244,16 @@ namespace Power_Point
         // Update canvas size
         public void UpdateCanvasSize(int canvasBackgroundWidth, int canvasBackgroundHeight)
         {
-            int width = canvasBackgroundWidth - Symbol.CANVAS_LOCATION_X * Symbol.TWO;
-            int height = (int)(width * Symbol.CANVAS_ASPECT_RATIO);
-            SetCanvasSize(width, height);
-            CanvasPosition = new Point(Symbol.CANVAS_LOCATION_X, (canvasBackgroundHeight - CanvasHeight) / Symbol.TWO);
+            if (canvasBackgroundHeight >= canvasBackgroundWidth * Symbol.CANVAS_ASPECT_RATIO)
+            {
+                CanvasSize = new Size(canvasBackgroundWidth - Symbol.CANVAS_LOCATION * Symbol.TWO, (int)((canvasBackgroundWidth - Symbol.CANVAS_LOCATION * 2) * Symbol.CANVAS_ASPECT_RATIO));
+                CanvasPosition = new Point(Symbol.CANVAS_LOCATION, (canvasBackgroundHeight - CanvasSize.Height) / Symbol.TWO);
+            }
+            else
+            {
+                CanvasSize = new Size((int)((canvasBackgroundHeight - Symbol.CANVAS_LOCATION * Symbol.TWO) / Symbol.CANVAS_ASPECT_RATIO), canvasBackgroundHeight - Symbol.CANVAS_LOCATION * Symbol.TWO);
+                CanvasPosition = new Point((canvasBackgroundWidth - CanvasSize.Width) / Symbol.TWO, Symbol.CANVAS_LOCATION);
+            }
         }
 
         // Update pages size
@@ -283,10 +261,8 @@ namespace Power_Point
         {
             if (pageBackgroundWidth != -1)
             {
-                int width = pageBackgroundWidth - Symbol.PAGES_LOCATION_X * Symbol.TWO;
-                int height = (int)(width * Symbol.CANVAS_ASPECT_RATIO);
-                SetPageSize(width, height);
-                _interval = Symbol.PAGE_INTERVAL * ((double)PageWidth / Symbol.PAGE_WIDTH);
+                PageSize = new Size(pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2, (int)((pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2) * Symbol.CANVAS_ASPECT_RATIO));
+                _interval = Symbol.PAGE_INTERVAL * ((double)PageSize.Width / Symbol.PAGE_WIDTH);
             }
         }
 

@@ -55,8 +55,6 @@ namespace Power_Point
             // Initialize canvas size and pages size
             UpdateCanvasSize(sender, e);
             UpdatePagesSize(sender, e);
-            _presentationModel.SetCanvasSize(_canvas.Width, _canvas.Height);
-            _presentationModel.SetPageSize(_pages[0].Width, _pages[0].Height);
 
             // Initialize state
             UpdatePanel();
@@ -174,8 +172,8 @@ namespace Power_Point
         private void UpdateCanvasSize(object sender, EventArgs e)
         {
             _presentationModel.UpdateCanvasSize(_canvasBackground.Width, _canvasBackground.Height);
-            _canvas.Width = _presentationModel.CanvasWidth;
-            _canvas.Height = _presentationModel.CanvasHeight;
+            _canvas.Width = _presentationModel.CanvasSize.Width;
+            _canvas.Height = _presentationModel.CanvasSize.Height;
             _canvas.Location = _presentationModel.CanvasPosition;
             UpdateAllPagesAndCanvasPaint();
         }
@@ -187,8 +185,8 @@ namespace Power_Point
             UpdatePagesCount();
             for (int i = 0; i < _pages.Count; i++)
             {
-                _pages[i].Width = _presentationModel.PageWidth;
-                _pages[i].Height = _presentationModel.PageHeight;
+                _pages[i].Width = _presentationModel.PageSize.Width;
+                _pages[i].Height = _presentationModel.PageSize.Height;
                 _pages[i].Location = _presentationModel.GetPagePosition(i);
             }
             UpdatePageSelected();
@@ -299,7 +297,7 @@ namespace Power_Point
         }
 
         // Click download button
-        private void ClickdownloadButton(object sender, EventArgs e)
+        private void ClickDownloadButton(object sender, EventArgs e)
         {
 
         }

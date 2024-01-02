@@ -32,7 +32,7 @@ namespace Power_Point
         public const double CANVAS_ASPECT_RATIO = 9.0 / 16;
         public const int PAGE_WIDTH = 177;
         public const int PAGE_HEIGHT = 99;
-        public const int CANVAS_LOCATION_X = 10;
+        public const int CANVAS_LOCATION = 10;
         public const int PAGES_LOCATION_X = 5;
         public const int PAGES_LOCATION_Y = 10;
         public const int PAGE_INTERVAL = 105;

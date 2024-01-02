@@ -272,7 +272,7 @@ namespace Power_Point
             this._downloadButton.Name = "_downloadButton";
             this._downloadButton.Size = new System.Drawing.Size(23, 22);
             this._downloadButton.Text = "toolStripButton2";
-            this._downloadButton.Click += new System.EventHandler(this.ClickdownloadButton);
+            this._downloadButton.Click += new System.EventHandler(this.ClickDownloadButton);
             // 
             // _canvasBackground
             // 
