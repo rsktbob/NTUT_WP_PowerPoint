@@ -202,9 +202,7 @@ namespace Power_Point
                 _pages.RemoveAt(_pages.Count - 1);
             }
             while (_pages.Count < _presentationModel.PagesCount)
-            {
                 _pages.Add(GetNewPage());
-            }
         }
 
         // Update all pages and canvas paint
@@ -212,10 +210,8 @@ namespace Power_Point
         {
             UpdatePagesCount();
             _canvas.Refresh();
-            for (int i = 0; i < _pages.Count; i++)
-            {
-                _pages[i].Refresh();
-            }
+            foreach (Button page in _pages)
+                page.Refresh();
         }
 
         // Click UndoButton
@@ -263,6 +259,7 @@ namespace Power_Point
             UpdateAllPagesAndCanvasPaint();
         }
 
+        // Update page selected
         private void UpdatePageSelected()
         {
             for (int i = 0; i < _pages.Count; i++)
@@ -292,8 +289,8 @@ namespace Power_Point
         // Click upload button
         private void ClickUploadButton(object sender, EventArgs e)
         {
-            UploadForm uploadForm = new UploadForm();
-            uploadForm.Show();
+            SaveForm saveForm = new SaveForm();
+            saveForm.Show();
         }
 
         // Click download button

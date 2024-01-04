@@ -354,14 +354,14 @@
             // 
             this._uploadFileOpenFileDialog.FileName = "openFileDialog1";
             // 
-            // GoogleDriveExample
+            // UploadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 503);
             this.Controls.Add(this.mainViewTableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "GoogleDriveExample";
+            this.Name = "UploadForm";
             this.Text = "Google Drive Example";
             this.mainViewTableLayoutPanel.ResumeLayout(false);
             this._uploadGroupBox.ResumeLayout(false);

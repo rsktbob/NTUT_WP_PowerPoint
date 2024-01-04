@@ -35,21 +35,23 @@ namespace Power_Point
             // 
             // _saveButton
             // 
-            this._saveButton.Location = new System.Drawing.Point(106, 25);
+            this._saveButton.Location = new System.Drawing.Point(99, 12);
             this._saveButton.Name = "_saveButton";
             this._saveButton.Size = new System.Drawing.Size(75, 23);
             this._saveButton.TabIndex = 0;
             this._saveButton.Text = "Save";
             this._saveButton.UseVisualStyleBackColor = true;
+            this._saveButton.Click += new System.EventHandler(this.ClickSaveButton);
             // 
             // SaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(284, 60);
+            this.ClientSize = new System.Drawing.Size(284, 43);
             this.Controls.Add(this._saveButton);
             this.Name = "SaveForm";
+            this.Load += new System.EventHandler(this.LoadSaveForm);
             this.ResumeLayout(false);
 
         }
