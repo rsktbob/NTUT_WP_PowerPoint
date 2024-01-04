@@ -254,6 +254,7 @@ namespace Power_Point
                 CanvasSize = new Size((int)((canvasBackgroundHeight - Symbol.CANVAS_LOCATION * Symbol.TWO) / Symbol.CANVAS_ASPECT_RATIO), canvasBackgroundHeight - Symbol.CANVAS_LOCATION * Symbol.TWO);
                 CanvasPosition = new Point((canvasBackgroundWidth - CanvasSize.Width) / Symbol.TWO, Symbol.CANVAS_LOCATION);
             }
+            _model.CanvasSize = CanvasSize;
         }
 
         // Update pages size
@@ -263,6 +264,7 @@ namespace Power_Point
             {
                 PageSize = new Size(pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2, (int)((pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2) * Symbol.CANVAS_ASPECT_RATIO));
                 _interval = Symbol.PAGE_INTERVAL * ((double)PageSize.Width / Symbol.PAGE_WIDTH);
+                _model.PageSize = PageSize;
             }
         }
 

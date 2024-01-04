@@ -64,3 +64,26 @@ D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\Sample.jpeg
 D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\updateSample.jpeg
 D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\clientSecret.json
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.UploadForm.resources
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Sample.jpeg
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\updateSample.jpeg
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\clientSecret.json
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Auth.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Core.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Drive.v2.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.PlatformServices.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Newtonsoft.Json.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\System.CodeDom.dll
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Auth.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Auth.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Core.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Core.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Drive.v2.pdb
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Google.Apis.Drive.v2.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\Newtonsoft.Json.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\bin\Debug\System.CodeDom.xml
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power_Point.UploadForm.resources
+C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.csproj.CopyComplete

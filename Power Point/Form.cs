@@ -130,7 +130,7 @@ namespace Power_Point
             _undoButton.Enabled = _presentationModel.UndoEnable;
             _redoButton.Enabled = _presentationModel.RedoEnable;
             Cursor = _presentationModel.PaintState ? Cursors.Cross : Cursors.Default;
-            Cursor = _presentationModel.IsScaling ? Cursors.SizeNWSE : Cursors.Default;
+            Cursor = _presentationModel.IsScaling ? Cursors.SizeNWSE : Cursor;
         }
 
         // Handle canvas pointer pressed
