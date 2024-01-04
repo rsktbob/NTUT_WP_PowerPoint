@@ -72,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\DeletePageCommand.cs" />
+    <Compile Include="ModalWindow\SaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalWindow\SaveForm.Designer.cs">
+      <DependentUpon>SaveForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalWindow\AddShapeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="Page\Shapes.cs" />
     <Compile Include="State\PointState.cs" />
     <Compile Include="Symbol.cs" />
+    <EmbeddedResource Include="ModalWindow\SaveForm.resx">
+      <DependentUpon>SaveForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModalWindow\AddShapeForm.resx">
       <DependentUpon>AddShapeForm.cs</DependentUpon>
     </EmbeddedResource>

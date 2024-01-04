@@ -82,7 +82,7 @@ namespace Power_Point
         {
             get
             {
-                return (double)PageSize.Height / Symbol.CANVAS_WIDTH;
+                return (double)PageSize.Width / Symbol.CANVAS_WIDTH;
             }
         }
 
