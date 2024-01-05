@@ -234,14 +234,12 @@ namespace Power_Point
         public void Undo()
         {
             _model.Undo();
-            UpdatePagesSize();
         }
 
         // Redo
         public void Redo()
         {
             _model.Redo();
-            UpdatePagesSize();
         }
 
         // Update canvas size

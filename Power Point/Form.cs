@@ -56,7 +56,7 @@ namespace Power_Point
             UpdatePagesSize(sender, e);
 
             // Initialize state
-            UpdatePanel();
+            UpdateDrawState();
             _pages[0].PerformClick();
         }
 
@@ -66,8 +66,7 @@ namespace Power_Point
             if (e.KeyCode == Keys.Delete)
             {
                 _presentationModel.PressDelete();
-                UpdatePageSelected();
-                UpdatePanel();
+                UpdateDrawState();
             }
         }
 
@@ -77,7 +76,7 @@ namespace Power_Point
             AddShapeForm addShapeForm = new AddShapeForm(_shapeComboBox.Text);
             addShapeForm._clickOkButtonEvent += ClickAddShapeFormOkButton;
             addShapeForm.Show();
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Delete shape
@@ -86,7 +85,7 @@ namespace Power_Point
             if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
                 _presentationModel.DeleteShape(e.RowIndex);
-                UpdatePanel();
+                UpdateDrawState();
             }
         }
 
@@ -94,32 +93,32 @@ namespace Power_Point
         private void ClickLineButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.LINE);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Click rectangle button
         private void ClickRectangleButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.RECTANGLE);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Click circle button
         private void ClickCircleButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.CIRCLE);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Click general button
         private void ClickGeneralButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.GENERAL);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
-        // Update shape button state
-        private void UpdatePanel()
+        // Update draw state
+        private void UpdateDrawState()
         {
             _lineButton.Checked = _presentationModel.LineChecked;
             _rectangleButton.Checked = _presentationModel.RectangleChecked;
@@ -135,21 +134,21 @@ namespace Power_Point
         public void HandleCanvasPointerPressed(object sender, MouseEventArgs e)
         {
             _presentationModel.HandlePointerPressed(e.X, e.Y);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Handle canvas pointer released
         public void HandleCanvasPointerReleased(object sender, MouseEventArgs e)
         {
             _presentationModel.HandlePointerReleased(e.X, e.Y);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Handle canvas pointer moved
         public void HandleCanvasPointerMoved(object sender, MouseEventArgs e)
         {
             _presentationModel.HandlePointerMoved(e.X, e.Y);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Handle canvas paint
@@ -171,23 +170,19 @@ namespace Power_Point
             _presentationModel.UpdateCanvasSize(_canvasBackground.Width, _canvasBackground.Height);
             _canvas.Width = _presentationModel.CanvasSize.Width;
             _canvas.Height = _presentationModel.CanvasSize.Height;
-            _canvas.Location = _presentationModel.CanvasPosition;
-            UpdateAllPagesAndCanvasPaint();
+            _canvas.Location = _presentationModel.CanvasPosition;;
         }
 
         // Update pages size
         private void UpdatePagesSize(object sender, EventArgs e)
         {
             _presentationModel.UpdatePagesSize(_pageBackground.Width);
-            UpdatePagesCount();
             for (int i = 0; i < _pages.Count; i++)
             {
                 _pages[i].Width = _presentationModel.PageSize.Width;
                 _pages[i].Height = _presentationModel.PageSize.Height;
                 _pages[i].Location = _presentationModel.GetPagePosition(i);
             }
-            UpdatePageSelected();
-            UpdateAllPagesAndCanvasPaint();
         }
 
         // Update pages count
@@ -216,18 +211,14 @@ namespace Power_Point
         private void ClickUndoButton(object sender, EventArgs e)
         {
             _presentationModel.Undo();
-            UpdatePagesSize(sender, e);
-            UpdateAllPagesAndCanvasPaint();
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Click RedoButton
         private void ClickRedoButton(object sender, EventArgs e)
         {
             _presentationModel.Redo();
-            UpdatePagesSize(sender, e);
-            UpdateAllPagesAndCanvasPaint();
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Get new page
@@ -250,8 +241,6 @@ namespace Power_Point
         {
             _addShapeButton.Focus();
             _presentationModel.SetCurrentPageIndex(_pages.IndexOf((sender as Button)));
-            UpdatePageSelected();
-            UpdateAllPagesAndCanvasPaint();
         }
 
         // Update page selected
@@ -268,15 +257,17 @@ namespace Power_Point
         {
             _presentationModel.InsertPage();
             UpdatePagesSize(sender, e);
-            UpdatePanel();
+            UpdateDrawState();
         }
 
         // Click addShapeForm ok button
         private void ClickAddShapeFormOkButton(object sender, EventArgs e)
         {
             ShapeEventArguments arguments = e as ShapeEventArguments;
-            _presentationModel.AddShape(arguments.ShapeType, arguments.Point1, arguments.Point2);
-            UpdateAllPagesAndCanvasPaint();
+            if (arguments != null)
+            {
+                _presentationModel.AddShape(arguments.ShapeType, arguments.Point1, arguments.Point2);
+            }
         }
 
         // Click save button
@@ -307,6 +298,8 @@ namespace Power_Point
         private void DownloadEnd(object sender, EventArgs e)
         {
             Enabled = true;
+            FileDataEventArguments arguments = e as FileDataEventArguments;
+            List<List<List<object>>> filedata = arguments.FileData;
         }
     }
 }

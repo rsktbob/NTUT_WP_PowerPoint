@@ -73,7 +73,7 @@ namespace Power_Point
         public void DeletePage(int index)
         {
             PageManager.RemoveAt(index);
-            CurrentPageIndex = index - 1;
+            CurrentPageIndex = index >= 1 ? index - 1 : index;
         }
 
         // Set current page index

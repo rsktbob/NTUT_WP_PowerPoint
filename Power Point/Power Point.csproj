@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\DeletePageCommand.cs" />
+    <Compile Include="EventArguments\FileDataEventArguments.cs" />
     <Compile Include="ModalWindow\LoadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,16 +101,10 @@
     <Compile Include="Components\DoubleBufferPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ModalWindow\UploadForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModalWindow\UploadForm.Designer.cs">
-      <DependentUpon>UploadForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GoogleDriveService.cs" />
     <Compile Include="Interface\ICommand.cs" />
     <Compile Include="Page\Pages.cs" />
-    <Compile Include="ShapeEventArguments.cs" />
+    <Compile Include="EventArguments\ShapeEventArguments.cs" />
     <Compile Include="State\DrawingState.cs" />
     <Compile Include="Interface\IState.cs" />
     <Compile Include="Shape\Circle.cs" />
@@ -143,9 +138,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModalWindow\UploadForm.resx">
-      <DependentUpon>UploadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

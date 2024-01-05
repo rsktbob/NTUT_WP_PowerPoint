@@ -35,14 +35,17 @@ namespace Power_Point
         private async void ClickSaveButton(object sender, EventArgs e)
         {
             Hide();
-            List<List<List<object>>> data = CovertPageManager(_pageManager);
+            List<List<List<object>>> fileData = CovertPageManager(_pageManager);
             string currentDirectory = Directory.GetCurrentDirectory();
-            string jsonText = JsonConvert.SerializeObject(data);
+            string jsonText = JsonConvert.SerializeObject(fileData);
             string filePath = Path.Combine(currentDirectory, FILE_NAME);
             File.WriteAllText(filePath, jsonText);
             await Task.Delay(10000);
             await Upload(filePath);
-            InvokeUploadEndEvent(null, null);
+            if (_uploadEndEvent != null)
+            {
+                _uploadEndEvent.Invoke(sender, e);
+            }
             Close();
         }
 
@@ -60,15 +63,6 @@ namespace Power_Point
                 }
             }
             return data;
-        }
-
-        //  Invoke upload end event
-        private void InvokeUploadEndEvent(object sender, EventArgs e)
-        {
-            if (_uploadEndEvent != null)
-            {
-               _uploadEndEvent.Invoke(sender, e);
-            }
         }
 
         // Upload file

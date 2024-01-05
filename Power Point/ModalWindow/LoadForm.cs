@@ -35,21 +35,18 @@ namespace Power_Point
             string currentDirectory = Directory.GetCurrentDirectory();
             List<Google.Apis.Drive.v2.Data.File> fileList = _service.ListRootFileAndFolder();
             Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item => { return item.Title == FILE_NAME; });
+            List<List<List<object>>> fileData = null;
             if (foundFile != null)
             {
-                _service.DownloadFile(foundFile, currentDirectory);
+                string fileText = _service.GetGoogleFileText(foundFile, currentDirectory);
+                fileData = JsonConvert.DeserializeObject<List<List<List<object>>>>(fileText);
             }
-            InvokeDowbloadEndEvent(sender, e);
-            Close();
-        }
-
-        // Invoke download end event
-        private void InvokeDowbloadEndEvent(object sender, EventArgs e)
-        {
-            if (_downloadEndEvent != null)
+            if (_downloadEndEvent != null && fileData != null)
             {
-                _downloadEndEvent.Invoke(sender, e);
+                FileDataEventArguments arguments = new FileDataEventArguments(fileData);
+                _downloadEndEvent.Invoke(sender, arguments);
             }
+            Close();
         }
     }
 }

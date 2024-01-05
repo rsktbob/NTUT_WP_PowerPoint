@@ -37,8 +37,7 @@ namespace Power_Point
         // Get ModelChangee
         public ModelChangedEventHandler ModelChanged
         {
-            get;
-            set;
+            get; set;
         }
 
         // Get IsScaling
@@ -305,6 +304,7 @@ namespace Power_Point
             {
                 _state = new PointState(this, _pages.CurrentShapes);
             }
+            NotifyModelChanged();
         }
     }
 }

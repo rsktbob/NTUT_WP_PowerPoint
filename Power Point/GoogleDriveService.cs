@@ -187,42 +187,25 @@ namespace GoogleDriveUploader.GoogleDrive
         /// <param name="fileToDownload">欲下載的檔案(Google Drive File) 一般會從List取得</param>
         /// <param name="downloadPath">下載到路徑</param>
         /// <param name="downloadProgressChangedEventHandeler">當下載進度改變時，呼叫這個函式</param>
-        public void DownloadFile(Google.Apis.Drive.v2.Data.File fileToDownload, string downloadPath, Action<IDownloadProgress> downloadProgressChangedEventHandeler = null)
+        public string GetGoogleFileText(Google.Apis.Drive.v2.Data.File fileToDownload, string downloadPath, Action<IDownloadProgress> downloadProgressChangedEventHandeler = null)
         {
-            const string SPLASH = @"\";
+            string fileText = "";
 
             CheckCredentialTimeStamp();
             if (!String.IsNullOrEmpty(fileToDownload.DownloadUrl))
             {
                 try
                 {
-                    Task<byte[]> downloadByte = _service.HttpClient.GetByteArrayAsync(fileToDownload.DownloadUrl);
-                    byte[] byteArray = downloadByte.Result;
-                    string downloadPosition = downloadPath + SPLASH + fileToDownload.Title;
-                    System.IO.File.WriteAllBytes(downloadPosition, byteArray);
+                    Task<string> getFileText = _service.HttpClient.GetStringAsync(fileToDownload.DownloadUrl);
+                    fileText = getFileText.Result;
                 }
                 catch (Exception exception)
                 {
                     throw exception;
                 }
             }
-        }
 
-        /// <summary>
-        /// 刪除符合FileID的檔案
-        /// </summary>
-        /// <param name="fileId">欲刪除檔案的FileID</param>
-        public void DeleteFile(string fileId)
-        {
-            CheckCredentialTimeStamp();
-            try
-            {
-                _service.Files.Delete(fileId).Execute();
-            }
-            catch (Exception exception)
-            {
-                throw exception;
-            }
+            return fileText;
         }
 
         /// <summary>
