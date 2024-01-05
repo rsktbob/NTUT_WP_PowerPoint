@@ -170,7 +170,7 @@ namespace Power_Point
             _presentationModel.UpdateCanvasSize(_canvasBackground.Width, _canvasBackground.Height);
             _canvas.Width = _presentationModel.CanvasSize.Width;
             _canvas.Height = _presentationModel.CanvasSize.Height;
-            _canvas.Location = _presentationModel.CanvasPosition;;
+            _canvas.Location = _presentationModel.CanvasPosition;
         }
 
         // Update pages size
@@ -202,6 +202,7 @@ namespace Power_Point
         private void UpdateAllPagesAndCanvasPaint()
         {
             UpdatePagesCount();
+            UpdatePagesSize(null, null);
             _canvas.Refresh();
             foreach (Button page in _pages)
                 page.Refresh();
@@ -285,7 +286,7 @@ namespace Power_Point
             LoadForm loadForm = new LoadForm();
             loadForm._downloadEndEvent += DownloadEnd;
             loadForm.Show();
-            Enabled = false;
+            this.Enabled = false;
         }
 
         // Upload end
@@ -297,9 +298,13 @@ namespace Power_Point
         // Download end
         private void DownloadEnd(object sender, EventArgs e)
         {
-            Enabled = true;
-            FileDataEventArguments arguments = e as FileDataEventArguments;
-            List<List<List<object>>> filedata = arguments.FileData;
+            this.Enabled = true;
+            if (e != null)
+            {
+                FileDataEventArguments arguments = e as FileDataEventArguments;
+                _presentationModel.LoadFileData(arguments.FileData);
+                UpdateDrawState();
+            }
         }
     }
 }

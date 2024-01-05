@@ -18,7 +18,7 @@ namespace Power_Point
         {
             get
             { 
-                return Symbol.RECTANGLE;  
+                return Symbol.RECTANGLE;
             }
         }
 

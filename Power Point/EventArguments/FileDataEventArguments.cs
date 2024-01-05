@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace Power_Point
 {
     public class FileDataEventArguments : EventArgs
     {
-        public List<List<List<object>>> FileData
+        public List<List<Shape>> FileData
         {
             get;
         }
 
-        public FileDataEventArguments(List<List<List<object>>> fileData)
+        public FileDataEventArguments(List<List<Shape>> fileData)
         {
             FileData = fileData;
         }

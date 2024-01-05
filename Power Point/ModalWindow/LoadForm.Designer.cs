@@ -41,7 +41,7 @@ namespace Power_Point
             this._loadButton.TabIndex = 0;
             this._loadButton.Text = "Load";
             this._loadButton.UseVisualStyleBackColor = true;
-            this._loadButton.Click += new System.EventHandler(this.CliclLoadButton);
+            this._loadButton.Click += new System.EventHandler(this.ClickLoadButton);
             // 
             // LoadForm
             // 

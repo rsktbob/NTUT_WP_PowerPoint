@@ -96,14 +96,12 @@ namespace Power_Point
 
         public Size CanvasSize
         {
-            get;
-            set;
+            get; set;
         }
 
         public Size PageSize
         {
-            get;
-            set;
+            get; set;
         }
 
         public Model()
@@ -304,6 +302,14 @@ namespace Power_Point
             {
                 _state = new PointState(this, _pages.CurrentShapes);
             }
+            NotifyModelChanged();
+        }
+
+        // Load file data
+        public void LoadFileData(List<List<Shape>> fileData)
+        {
+            _commandManager.Clear();
+            _pages.LoadFileData(fileData);
             NotifyModelChanged();
         }
     }

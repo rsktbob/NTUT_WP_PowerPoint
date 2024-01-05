@@ -81,5 +81,21 @@ namespace Power_Point
         {
             CurrentPageIndex = index;
         }
+
+        // Load file data
+        public void LoadFileData(List<List<Shape>> filedata)
+        {
+            PageManager.Clear();
+            for (int i = 0; i < filedata.Count; i++)
+            {
+                Shapes shapes = new Shapes();
+                for (int j = 0; j < filedata[i].Count; j++)
+                {
+                    shapes.AddShape(filedata[i][j]);
+                }
+                PageManager.Add(shapes);
+            }
+            SetCurrentPageIndex(0);
+        }
     }
 }

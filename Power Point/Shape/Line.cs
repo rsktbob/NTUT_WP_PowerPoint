@@ -10,7 +10,7 @@ namespace Power_Point
     {
         public Line(int pointX1, int pointY1, int pointX2, int pointY2) : base(pointX1, pointY1, pointX2, pointY2)
         {
-            
+
         }
 
         // Get shape name

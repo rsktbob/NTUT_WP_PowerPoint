@@ -286,5 +286,11 @@ namespace Power_Point
         {
             return new Point(Symbol.PAGES_LOCATION_X, Symbol.PAGES_LOCATION_Y + (int)(index * _interval));
         }
+
+        // Load file data
+        public void LoadFileData(List<List<Shape>> fileData)
+        {
+            _model.LoadFileData(fileData);
+        }
     }
 }

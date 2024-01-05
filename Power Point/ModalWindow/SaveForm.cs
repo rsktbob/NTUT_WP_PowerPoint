@@ -25,44 +25,28 @@ namespace Power_Point
         {
             InitializeComponent();
             const string APPLICATION_NAME = "DrawAnywhere";
-            const string CLIEBT_SECRET_FILE_NAME = "clientSecret.json";
+            const string CLIENT_SECRET_FILE_NAME = "clientSecret.json";
 
             _pageManager = pageManager;
-            _service = new GoogleDriveService(APPLICATION_NAME, CLIEBT_SECRET_FILE_NAME);
+            _service = new GoogleDriveService(APPLICATION_NAME, CLIENT_SECRET_FILE_NAME);
         }
 
         // Click save button
         private async void ClickSaveButton(object sender, EventArgs e)
         {
             Hide();
-            List<List<List<object>>> fileData = CovertPageManager(_pageManager);
+            List<List<Shape>> fileData = TransformPageManager(_pageManager);
             string currentDirectory = Directory.GetCurrentDirectory();
-            string jsonText = JsonConvert.SerializeObject(fileData);
+            string fileText = JsonConvert.SerializeObject(fileData);
             string filePath = Path.Combine(currentDirectory, FILE_NAME);
-            File.WriteAllText(filePath, jsonText);
-            await Task.Delay(10000);
+            File.WriteAllText(filePath, fileText);
+            await Task.Delay(3000);
             await Upload(filePath);
             if (_uploadEndEvent != null)
             {
                 _uploadEndEvent.Invoke(sender, e);
             }
             Close();
-        }
-
-        // pageManager corvert to list<list<list<object>>>
-        private List<List<List<object>>> CovertPageManager(List<Shapes> pageManager)
-        {
-            List<List<List<object>>> data = new List<List<List<object>>>();
-            for (int i = 0; i < pageManager.Count; i++)
-            {
-                data.Add(new List<List<object>>());
-                for (int j = 0; j < pageManager[i].ShapeManager.Count; j++)
-                {
-                    Shape shape = pageManager[i].ShapeManager[j];
-                    data[i].Add(new List<object> { shape.ShapeName, shape.IsSelected, shape.PointX1, shape.PointY1, shape.PointX2, shape.PointY2 });
-                }
-            }
-            return data;
         }
 
         // Upload file
@@ -73,7 +57,7 @@ namespace Power_Point
                 if (File.Exists(filePath))
                 {
                     List<Google.Apis.Drive.v2.Data.File> fileList = _service.ListRootFileAndFolder();
-                    Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item => { return item.Title == FILE_NAME; });
+                    Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item => item.Title == FILE_NAME);
                     if (foundFile != null)
                     {
                         _service.UpdateFile(FILE_NAME, foundFile.Id, CONTENT_TYPE);
@@ -85,6 +69,21 @@ namespace Power_Point
                     File.Delete(filePath);
                 }
             });
+        }
+
+        // Transform pageManager
+        private List<List<Shape>> TransformPageManager(List<Shapes> PageManager)
+        {
+            List<List<Shape>> fileData = new List<List<Shape>>();
+            for (int i =0; i < PageManager.Count; i++)
+            {
+                fileData.Add(new List<Shape>());
+                for (int j = 0; j < PageManager[i].ShapeManager.Count; j++)
+                {
+                    fileData[i].Add(PageManager[i].ShapeManager[j]);
+                }
+            }
+            return fileData;
         }
     }
 }

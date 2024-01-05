@@ -220,22 +220,6 @@
             </Smell>
             <Smell>
               <Id>3</Id>
-              <SmellType>ICS(空白與空行-17)</SmellType>
-              <HashCode>SpacingAndNewLine17.GoogleDriveService.cs.2.                insertRequest.ProgressChanged += uploadProgressEventHandeler;.            if (responseReceivedEventHandler != null)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>GoogleDriveService.cs</File>
-              <Line>163</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-17) 一次不加多個空行(若發生時，則指定在多個空行的第一行即可)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>4</Id>
               <SmellType>ICS(縮排與換行-1)</SmellType>
               <HashCode>IndentAndNewLine1.UploadFile.            Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File { Title = title };</HashCode>
               <Severity>Red</Severity>
@@ -251,7 +235,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>5</Id>
+              <Id>4</Id>
               <SmellType>ICS(縮排與換行-3)</SmellType>
               <HashCode>IndentAndNewLine3.UploadFile.            Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File { Title = title };</HashCode>
               <Severity>Red</Severity>
@@ -267,7 +251,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>6</Id>
+              <Id>5</Id>
               <SmellType>Literal constants(字面常數)-2</SmellType>
               <HashCode>LiteralConstants.UploadFile.2</HashCode>
               <Severity>Warning</Severity>
@@ -283,9 +267,9 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>7</Id>
+              <Id>6</Id>
               <SmellType>Static method and fields(濫用Static)</SmellType>
-              <HashCode>StaticMethodAndFields 52398910</HashCode>
+              <HashCode>StaticMethodAndFields 65125971</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
@@ -299,7 +283,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>8</Id>
+              <Id>7</Id>
               <SmellType>ICS(變數-1)</SmellType>
               <HashCode>Variable1.GoogleDriveService.SCOPES</HashCode>
               <Severity>Red</Severity>
@@ -315,7 +299,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>9</Id>
+              <Id>8</Id>
               <SmellType>Long method(過長函式)</SmellType>
               <HashCode>LongMethod.GoogleDriveService.CreateNewService.24string applicationName;string clientSecretFileName;</HashCode>
               <Severity>Warning</Severity>
@@ -331,7 +315,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>10</Id>
+              <Id>9</Id>
               <SmellType>Long method(過長函式)</SmellType>
               <HashCode>LongMethod.GoogleDriveService.ListFileAndFolderWithQueryString.23string queryString;</HashCode>
               <Severity>Warning</Severity>
@@ -347,7 +331,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>11</Id>
+              <Id>10</Id>
               <SmellType>Unsuitable naming(名不符實)-uploadProgressEventHandeler(handeler)</SmellType>
               <HashCode>UnsuitableNaming.GoogleDriveService.UploadFile.uploadProgressEventHandeler</HashCode>
               <Severity>Red</Severity>
@@ -363,11 +347,11 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>12</Id>
+              <Id>11</Id>
               <SmellType>Long method(過長函式)</SmellType>
-              <HashCode>LongMethod.GoogleDriveService.UploadFile.38string uploadFileName;string contentType;Action&lt;IUploadProgress&gt; uploadProgressEventHandeler;Action&lt;Google.Apis.Drive.v2.Data.File&gt; responseReceivedEventHandler;</HashCode>
+              <HashCode>LongMethod.GoogleDriveService.UploadFile.37string uploadFileName;string contentType;Action&lt;IUploadProgress&gt; uploadProgressEventHandeler;Action&lt;Google.Apis.Drive.v2.Data.File&gt; responseReceivedEventHandler;</HashCode>
               <Severity>Red</Severity>
-              <Weight>38</Weight>
+              <Weight>37</Weight>
               <Project>Power Point</Project>
               <File>GoogleDriveService.cs</File>
               <Line>145</Line>
@@ -379,990 +363,62 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>13</Id>
+              <Id>12</Id>
               <SmellType>Unsuitable naming(名不符實)-downloadProgressChangedEventHandeler(handeler)</SmellType>
-              <HashCode>UnsuitableNaming.GoogleDriveService.DownloadFile.downloadProgressChangedEventHandeler</HashCode>
+              <HashCode>UnsuitableNaming.GoogleDriveService.GetGoogleFileText.downloadProgressChangedEventHandeler</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>GoogleDriveService.cs</File>
-              <Line>190</Line>
+              <Line>189</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
               <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>13</Id>
+              <SmellType>ICS(縮排與換行-1)</SmellType>
+              <HashCode>IndentAndNewLine1.TransformPageManager.                    data[i].Add(new List&lt;object&gt; { shape.ShapeName, shape.IsSelected, shape.PointX1, shape.PointY1, shape.PointX2, shape.PointY2 });</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>SaveForm.cs</File>
+              <Line>62</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
               <Id>14</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
+              <SmellType>ICS(縮排與換行-3)</SmellType>
+              <HashCode>IndentAndNewLine3.TransformPageManager.                    data[i].Add(new List&lt;object&gt; { shape.ShapeName, shape.IsSelected, shape.PointX1, shape.PointY1, shape.PointX2, shape.PointY2 });</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>SaveForm.cs</File>
-              <Line>40</Line>
+              <Line>62</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
               <Id>15</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>16</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>17</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>18</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>19</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>20</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>45</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>21</Id>
-              <SmellType>ICS(空白與空行-9)</SmellType>
-              <HashCode>SpacingAndNewLine9</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>45</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>22</Id>
-              <SmellType>ICS(空白與空行-15)</SmellType>
-              <HashCode>SpacingAndNewLine15</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-15) 不亂加多個空白</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>23</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.            List&lt;List&lt;List&lt;object&gt;&gt;&gt; lst1 = new List&lt;List&lt;List&lt;object&gt;&gt;&gt; { new List&lt;List&lt;object&gt;&gt;</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>39</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>24</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.            {   new List&lt;object&gt; { "client", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>25</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.                new List&lt;object&gt; {"dessert", 21, 8, 6, 14 } },</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>26</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.             new List&lt;List&lt;object&gt;&gt; {</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>42</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>27</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.                 new List&lt;object&gt; { "circle", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>28</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickSaveButton.                 new List&lt;object&gt; {"square", 21, 8, 6, 14 }}</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>29</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.            List&lt;List&lt;List&lt;object&gt;&gt;&gt; lst1 = new List&lt;List&lt;List&lt;object&gt;&gt;&gt; { new List&lt;List&lt;object&gt;&gt;</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>39</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>30</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.            {   new List&lt;object&gt; { "client", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>31</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.            {   new List&lt;object&gt; { "client", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>32</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.                new List&lt;object&gt; {"dessert", 21, 8, 6, 14 } },</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>33</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.                 new List&lt;object&gt; { "circle", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>34</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickSaveButton.                 new List&lt;object&gt; {"square", 21, 8, 6, 14 }}</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>35</Id>
-              <SmellType>ICS(縮排與換行-4)</SmellType>
-              <HashCode>IndentAndNewLine4.ClickSaveButton.             new List&lt;List&lt;object&gt;&gt; {</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>42</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-4) 縮排一律使用 tab(空 4 格)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>36</Id>
-              <SmellType>ICS(縮排與換行-4)</SmellType>
-              <HashCode>IndentAndNewLine4.ClickSaveButton.                 new List&lt;object&gt; { "circle", 3, 6, 14, 8},</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-4) 縮排一律使用 tab(空 4 格)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>37</Id>
-              <SmellType>ICS(縮排與換行-4)</SmellType>
-              <HashCode>IndentAndNewLine4.ClickSaveButton.                 new List&lt;object&gt; {"square", 21, 8, 6, 14 }}</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-4) 縮排一律使用 tab(空 4 格)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>38</Id>
-              <SmellType>ICS(縮排與換行-4)</SmellType>
-              <HashCode>IndentAndNewLine4.ClickSaveButton.             };</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>45</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-4) 縮排一律使用 tab(空 4 格)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>39</Id>
-              <SmellType>Literal constants(字面常數)-3</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.3</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>40</Id>
-              <SmellType>Literal constants(字面常數)-3</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.3</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>41</Id>
-              <SmellType>Literal constants(字面常數)-6</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.6</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>42</Id>
-              <SmellType>Literal constants(字面常數)-6</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.6</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>43</Id>
-              <SmellType>Literal constants(字面常數)-6</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.6</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>44</Id>
-              <SmellType>Literal constants(字面常數)-6</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.6</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>45</Id>
-              <SmellType>Literal constants(字面常數)-14</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>46</Id>
-              <SmellType>Literal constants(字面常數)-14</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>47</Id>
-              <SmellType>Literal constants(字面常數)-14</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>48</Id>
-              <SmellType>Literal constants(字面常數)-14</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>49</Id>
-              <SmellType>Literal constants(字面常數)-8</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.8</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>40</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>50</Id>
-              <SmellType>Literal constants(字面常數)-8</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.8</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>51</Id>
-              <SmellType>Literal constants(字面常數)-8</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.8</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>52</Id>
-              <SmellType>Literal constants(字面常數)-8</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.8</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>53</Id>
-              <SmellType>Literal constants(字面常數)-21</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.21</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>54</Id>
-              <SmellType>Literal constants(字面常數)-21</SmellType>
-              <HashCode>LiteralConstants.ClickSaveButton.21</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>44</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>55</Id>
-              <SmellType>Unsuitable naming(名不符實)-CLIEBT_SECRET_FILE_NAME(cliebt)</SmellType>
-              <HashCode>UnsuitableNaming.SaveForm.LoadSaveForm.CLIEBT_SECRET_FILE_NAME</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>31</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>56</Id>
-              <SmellType>Unsuitable naming(名不符實)-lst1(lst)</SmellType>
-              <HashCode>UnsuitableNaming.SaveForm.ClickSaveButton.lst1</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>39</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>57</Id>
-              <SmellType>Unsuitable naming(名不符實)-json(json)</SmellType>
-              <HashCode>UnsuitableNaming.SaveForm.ClickSaveButton.json</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>48</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>58</Id>
-              <SmellType>Long method(過長函式)</SmellType>
-              <HashCode>LongMethod.SaveForm.ClickSaveButton.29object sender;EventArgs e;</HashCode>
-              <Severity>Warning</Severity>
-              <Weight>29</Weight>
-              <Project>Power Point</Project>
-              <File>SaveForm.cs</File>
-              <Line>37</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>59</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickUpdateButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == FILE_TITLE_ON_DRIVE; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>96</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>60</Id>
-              <SmellType>ICS(縮排與換行-1)</SmellType>
-              <HashCode>IndentAndNewLine1.ClickDeleteButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == DELETE_FILE_ON_DRIVE_NAME; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>105</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-1) 左大括號一律換行</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>61</Id>
-              <SmellType>ICS(縮排與換行-2)</SmellType>
-              <HashCode>IndentAndNewLine2.ClickUpdateButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == FILE_TITLE_ON_DRIVE; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>96</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-2) 右大括號一律換行-並與左大括號對齊</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>62</Id>
-              <SmellType>ICS(縮排與換行-2)</SmellType>
-              <HashCode>IndentAndNewLine2.ClickDeleteButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == DELETE_FILE_ON_DRIVE_NAME; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>105</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-2) 右大括號一律換行-並與左大括號對齊</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>63</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickUpdateButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == FILE_TITLE_ON_DRIVE; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>96</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>64</Id>
-              <SmellType>ICS(縮排與換行-3)</SmellType>
-              <HashCode>IndentAndNewLine3.ClickDeleteButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == DELETE_FILE_ON_DRIVE_NAME; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>105</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-3) 左大括號後，一律換行撰寫程式碼</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>65</Id>
-              <SmellType>ICS(縮排與換行-6)</SmellType>
-              <HashCode>IndentAndNewLine6.ClickUpdateButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == FILE_TITLE_ON_DRIVE; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>96</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-6) 一行不能有多個 statements</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>66</Id>
-              <SmellType>ICS(縮排與換行-6)</SmellType>
-              <HashCode>IndentAndNewLine6.ClickUpdateButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == FILE_TITLE_ON_DRIVE; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>96</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-6) 一行不能有多個 statements</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>67</Id>
-              <SmellType>ICS(縮排與換行-6)</SmellType>
-              <HashCode>IndentAndNewLine6.ClickDeleteButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == DELETE_FILE_ON_DRIVE_NAME; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>105</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-6) 一行不能有多個 statements</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>68</Id>
-              <SmellType>ICS(縮排與換行-6)</SmellType>
-              <HashCode>IndentAndNewLine6.ClickDeleteButton.            Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item =&gt; { return item.Title == DELETE_FILE_ON_DRIVE_NAME; });</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>105</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(縮排與換行-6) 一行不能有多個 statements</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>69</Id>
-              <SmellType>Unsuitable naming(名不符實)-rootFoldersFiles(folders)</SmellType>
-              <HashCode>UnsuitableNaming.UploadForm.ClickListFileOnRootButton.rootFoldersFiles</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>59</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>70</Id>
-              <SmellType>Unsuitable naming(名不符實)-selecredFile(selecred)</SmellType>
-              <HashCode>UnsuitableNaming.UploadForm.ClickDownloadButton.selecredFile</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>85</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>71</Id>
-              <SmellType>ICS(變數-1)</SmellType>
-              <HashCode>Variable1.UploadForm.mainViewTableLayoutPanel</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.Designer.cs</File>
-              <Line>385</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>72</Id>
-              <SmellType>ICS(變數-1)</SmellType>
-              <HashCode>Variable1.UploadForm.tableLayoutPanel1</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.Designer.cs</File>
-              <Line>398</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>73</Id>
-              <SmellType>ICS(變數-1)</SmellType>
-              <HashCode>Variable1.UploadForm.tableLayoutPanel2</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.Designer.cs</File>
-              <Line>400</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>ICS(變數-1) Class 成員變數以底線開始，底線後第一個字母小寫，若由多個單字組成，從第二個單字開始，每個單字的第一個字母大寫，其餘小寫。 不以底線區隔單字</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>74</Id>
               <SmellType>Literal constants(字面常數)-2</SmellType>
               <HashCode>LiteralConstants.UpdateCanvasSize.2</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>FormPresentationModel.cs</File>
-              <Line>249</Line>
+              <Line>250</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1371,14 +427,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>75</Id>
+              <Id>16</Id>
               <SmellType>Literal constants(字面常數)-2</SmellType>
               <HashCode>LiteralConstants.UpdatePagesSize.2</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>FormPresentationModel.cs</File>
-              <Line>265</Line>
+              <Line>266</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1387,14 +443,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>76</Id>
+              <Id>17</Id>
               <SmellType>Literal constants(字面常數)-2</SmellType>
               <HashCode>LiteralConstants.UpdatePagesSize.2</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>FormPresentationModel.cs</File>
-              <Line>265</Line>
+              <Line>266</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1403,7 +459,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>77</Id>
+              <Id>18</Id>
+              <SmellType>Unsuitable naming(名不符實)-filedata(filedata)</SmellType>
+              <HashCode>UnsuitableNaming.Pages.LoadFileData.filedata</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>Pages.cs</File>
+              <Line>86</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>19</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.AddCommandTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.19</HashCode>
               <Severity>Red</Severity>
@@ -1419,7 +491,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>78</Id>
+              <Id>20</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.AddCommandTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.31</HashCode>
               <Severity>Red</Severity>
@@ -1435,7 +507,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>79</Id>
+              <Id>21</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.AddCommandTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.44</HashCode>
               <Severity>Red</Severity>
@@ -1451,7 +523,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>80</Id>
+              <Id>22</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.CommandManagerTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.34</HashCode>
               <Severity>Red</Severity>
@@ -1467,7 +539,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>81</Id>
+              <Id>23</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.CommandManagerTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.47</HashCode>
               <Severity>Red</Severity>
@@ -1483,7 +555,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>82</Id>
+              <Id>24</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.CommandManagerTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'AddCommand.AddCommand(Shapes, string, int, int, int, int)' 之必要型式參數 'pointX1' 的引數.66</HashCode>
               <Severity>Red</Severity>
@@ -1499,7 +571,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>83</Id>
+              <Id>25</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).19</HashCode>
               <Severity>Red</Severity>
@@ -1515,7 +587,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>84</Id>
+              <Id>26</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.20</HashCode>
               <Severity>Red</Severity>
@@ -1531,7 +603,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>85</Id>
+              <Id>27</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).32</HashCode>
               <Severity>Red</Severity>
@@ -1547,7 +619,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>86</Id>
+              <Id>28</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).33</HashCode>
               <Severity>Red</Severity>
@@ -1563,7 +635,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>87</Id>
+              <Id>29</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.34</HashCode>
               <Severity>Red</Severity>
@@ -1579,7 +651,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>88</Id>
+              <Id>30</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).46</HashCode>
               <Severity>Red</Severity>
@@ -1595,7 +667,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>89</Id>
+              <Id>31</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DeleteCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.47</HashCode>
               <Severity>Red</Severity>
@@ -1611,7 +683,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>90</Id>
+              <Id>32</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DrawCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.20</HashCode>
               <Severity>Red</Severity>
@@ -1627,7 +699,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>91</Id>
+              <Id>33</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DrawCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.33</HashCode>
               <Severity>Red</Severity>
@@ -1643,7 +715,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>92</Id>
+              <Id>34</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.DrawCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.53</HashCode>
               <Severity>Red</Severity>
@@ -1659,7 +731,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>93</Id>
+              <Id>35</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).21</HashCode>
               <Severity>Red</Severity>
@@ -1675,7 +747,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>94</Id>
+              <Id>36</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.22</HashCode>
               <Severity>Red</Severity>
@@ -1691,7 +763,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>95</Id>
+              <Id>37</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).39</HashCode>
               <Severity>Red</Severity>
@@ -1707,7 +779,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>96</Id>
+              <Id>38</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.40</HashCode>
               <Severity>Red</Severity>
@@ -1723,7 +795,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>97</Id>
+              <Id>39</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).57</HashCode>
               <Severity>Red</Severity>
@@ -1739,7 +811,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>98</Id>
+              <Id>40</Id>
               <SmellType>Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'</SmellType>
               <HashCode>Power PointTests\Power PointTests.MoveCommandTests.cs.Unresolved warnings(忽視警告)-引數 1: 無法從 'Power_Point.Model' 轉換成 'Power_Point.Shapes'.58</HashCode>
               <Severity>Red</Severity>
@@ -1755,7 +827,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>99</Id>
+              <Id>41</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Factory.Factory(string)' 之必要型式參數 'shapeType' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FactoryTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Factory.Factory(string)' 之必要型式參數 'shapeType' 的引數.18</HashCode>
               <Severity>Red</Severity>
@@ -1771,7 +843,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>100</Id>
+              <Id>42</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.FactoryTests.cs.Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?).21</HashCode>
               <Severity>Red</Severity>
@@ -1787,7 +859,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>101</Id>
+              <Id>43</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.FactoryTests.cs.Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?).24</HashCode>
               <Severity>Red</Severity>
@@ -1803,7 +875,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>102</Id>
+              <Id>44</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.FactoryTests.cs.Unresolved warnings(忽視警告)-'Factory' 未包含 'CreateRandomPositionShape' 的定義，也找不到可接受類型 'Factory' 第一個引數的可存取擴充方法 'CreateRandomPositionShape' (是否遺漏 using 指示詞或組件參考?).27</HashCode>
               <Severity>Red</Severity>
@@ -1819,7 +891,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>103</Id>
+              <Id>45</Id>
               <SmellType>Unresolved warnings(忽視警告)-'FormPresentationModel' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'FormPresentationModel' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-'FormPresentationModel' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'FormPresentationModel' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).24</HashCode>
               <Severity>Red</Severity>
@@ -1835,7 +907,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>104</Id>
+              <Id>46</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數.51</HashCode>
               <Severity>Red</Severity>
@@ -1851,7 +923,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>105</Id>
+              <Id>47</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數.60</HashCode>
               <Severity>Red</Severity>
@@ -1867,7 +939,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>106</Id>
+              <Id>48</Id>
               <SmellType>Unresolved warnings(忽視警告)-'FormPresentationModel' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'FormPresentationModel' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-'FormPresentationModel' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'FormPresentationModel' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).110</HashCode>
               <Severity>Red</Severity>
@@ -1883,7 +955,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>107</Id>
+              <Id>49</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數.202</HashCode>
               <Severity>Red</Severity>
@@ -1899,7 +971,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>108</Id>
+              <Id>50</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數.225</HashCode>
               <Severity>Red</Severity>
@@ -1915,7 +987,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>109</Id>
+              <Id>51</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.FormPresentationModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'FormPresentationModel.AddShape(string, Point, Point)' 之必要型式參數 'point1' 的引數.240</HashCode>
               <Severity>Red</Severity>
@@ -1931,7 +1003,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>110</Id>
+              <Id>52</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).23</HashCode>
               <Severity>Red</Severity>
@@ -1947,7 +1019,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>111</Id>
+              <Id>53</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?).24</HashCode>
               <Severity>Red</Severity>
@@ -1963,7 +1035,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>112</Id>
+              <Id>54</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.39</HashCode>
               <Severity>Red</Severity>
@@ -1979,7 +1051,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>113</Id>
+              <Id>55</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.48</HashCode>
               <Severity>Red</Severity>
@@ -1995,7 +1067,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>114</Id>
+              <Id>56</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).65</HashCode>
               <Severity>Red</Severity>
@@ -2011,7 +1083,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>115</Id>
+              <Id>57</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).90</HashCode>
               <Severity>Red</Severity>
@@ -2027,7 +1099,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>116</Id>
+              <Id>58</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.103</HashCode>
               <Severity>Red</Severity>
@@ -2043,7 +1115,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>117</Id>
+              <Id>59</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.110</HashCode>
               <Severity>Red</Severity>
@@ -2059,7 +1131,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>118</Id>
+              <Id>60</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.118</HashCode>
               <Severity>Red</Severity>
@@ -2075,7 +1147,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>119</Id>
+              <Id>61</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'DeleteCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'DeleteCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'DeleteCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'DeleteCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).121</HashCode>
               <Severity>Red</Severity>
@@ -2091,7 +1163,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>120</Id>
+              <Id>62</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).129</HashCode>
               <Severity>Red</Severity>
@@ -2107,7 +1179,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>121</Id>
+              <Id>63</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).130</HashCode>
               <Severity>Red</Severity>
@@ -2123,7 +1195,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>122</Id>
+              <Id>64</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'InsertCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'InsertCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'InsertCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'InsertCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).133</HashCode>
               <Severity>Red</Severity>
@@ -2139,7 +1211,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>123</Id>
+              <Id>65</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).146</HashCode>
               <Severity>Red</Severity>
@@ -2155,7 +1227,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>124</Id>
+              <Id>66</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).147</HashCode>
               <Severity>Red</Severity>
@@ -2171,7 +1243,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>125</Id>
+              <Id>67</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'PopCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'PopCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'PopCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'PopCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).149</HashCode>
               <Severity>Red</Severity>
@@ -2187,7 +1259,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>126</Id>
+              <Id>68</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).164</HashCode>
               <Severity>Red</Severity>
@@ -2203,7 +1275,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>127</Id>
+              <Id>69</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'MoveCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'MoveCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'MoveCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'MoveCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).166</HashCode>
               <Severity>Red</Severity>
@@ -2219,7 +1291,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>128</Id>
+              <Id>70</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).178</HashCode>
               <Severity>Red</Severity>
@@ -2235,7 +1307,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>129</Id>
+              <Id>71</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).182</HashCode>
               <Severity>Red</Severity>
@@ -2251,7 +1323,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>130</Id>
+              <Id>72</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?).191</HashCode>
               <Severity>Red</Severity>
@@ -2267,7 +1339,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>131</Id>
+              <Id>73</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?).195</HashCode>
               <Severity>Red</Severity>
@@ -2283,7 +1355,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>132</Id>
+              <Id>74</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetCanvasSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetCanvasSize' (是否遺漏 using 指示詞或組件參考?).205</HashCode>
               <Severity>Red</Severity>
@@ -2299,7 +1371,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>133</Id>
+              <Id>75</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetPageSize' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetPageSize' (是否遺漏 using 指示詞或組件參考?).219</HashCode>
               <Severity>Red</Severity>
@@ -2315,7 +1387,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>134</Id>
+              <Id>76</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數.221</HashCode>
               <Severity>Red</Severity>
@@ -2331,7 +1403,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>135</Id>
+              <Id>77</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.DrawPage(int, IGraphics)' 之必要型式參數 'graphics' 的引數.225</HashCode>
               <Severity>Red</Severity>
@@ -2347,7 +1419,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>136</Id>
+              <Id>78</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.312</HashCode>
               <Severity>Red</Severity>
@@ -2363,7 +1435,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>137</Id>
+              <Id>79</Id>
               <SmellType>Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數</SmellType>
               <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-未提供任何可對應到 'Model.PushAddCommand(string, Point, Point)' 之必要型式參數 'point1' 的引數.323</HashCode>
               <Severity>Red</Severity>
@@ -2379,7 +1451,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>138</Id>
+              <Id>80</Id>
               <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?)</SmellType>
               <HashCode>Power PointTests\Power PointTests.PointStateTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'AddCurrentPageShape' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'AddCurrentPageShape' (是否遺漏 using 指示詞或組件參考?).33</HashCode>
               <Severity>Red</Severity>
@@ -2395,7 +1467,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>139</Id>
+              <Id>81</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 Execute 缺乏註解</SmellType>
               <HashCode>Power Point\Power Point.InsertPageCommand.cs.Unresolved warnings(忽視警告)-函式 Execute 缺乏註解.22</HashCode>
               <Severity>Red</Severity>
@@ -2411,7 +1483,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>140</Id>
+              <Id>82</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 ReverseExecute 缺乏註解</SmellType>
               <HashCode>Power Point\Power Point.InsertPageCommand.cs.Unresolved warnings(忽視警告)-函式 ReverseExecute 缺乏註解.27</HashCode>
               <Severity>Red</Severity>
@@ -2427,7 +1499,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>141</Id>
+              <Id>83</Id>
               <SmellType>Unresolved warnings(忽視警告)-函式 CreateNewService 缺乏註解</SmellType>
               <HashCode>Power Point\Power Point.GoogleDriveService.cs.Unresolved warnings(忽視警告)-函式 CreateNewService 缺乏註解.42</HashCode>
               <Severity>Red</Severity>
@@ -2443,7 +1515,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>142</Id>
+              <Id>84</Id>
               <SmellType>Unresolved warnings(忽視警告)-'GoogleClientSecrets.Load(Stream)' 已經過時: 'Please use GoogleClientSecrets.FromStream which is an equivalent alternative.'</SmellType>
               <HashCode>Power Point\Power Point.GoogleDriveService.cs.Unresolved warnings(忽視警告)-'GoogleClientSecrets.Load(Stream)' 已經過時: 'Please use GoogleClientSecrets.FromStream which is an equivalent alternative.'.52</HashCode>
               <Severity>Red</Severity>
@@ -2459,247 +1531,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>143</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickBrowseUploadFileButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickBrowseUploadFileButton 缺乏註解.36</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>36</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>144</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickUploadButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickUploadButton 缺乏註解.47</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>47</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>145</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickListFileOnRootButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickListFileOnRootButton 缺乏註解.53</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>53</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>146</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickDownloadBrowseButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickDownloadBrowseButton 缺乏註解.72</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>72</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>147</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickDownloadButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickDownloadButton 缺乏註解.83</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>83</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>148</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickUpdateButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickUpdateButton 缺乏註解.89</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>89</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>149</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickDeleteButton 缺乏註解</SmellType>
-              <HashCode>Power Point\Power Point.UploadForm.cs.Unresolved warnings(忽視警告)-函式 ClickDeleteButton 缺乏註解.100</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>100</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>150</Id>
-              <SmellType>Unresolved warnings(忽視警告)-'packages' 元素未宣告。</SmellType>
-              <HashCode>Power Point\Power Point.packages.config.Unresolved warnings(忽視警告)-'packages' 元素未宣告。.2</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point\Power Point</Project>
-              <File>packages.config</File>
-              <Line>2</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>151</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>36 Power_Point.UploadForm.ClickBrowseUploadFileButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>36</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickBrowseUploadFileButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>152</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>47 Power_Point.UploadForm.ClickUploadButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>47</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickUploadButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>153</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>53 Power_Point.UploadForm.ClickListFileOnRootButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>53</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickListFileOnRootButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>154</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>72 Power_Point.UploadForm.ClickDownloadBrowseButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>72</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickDownloadBrowseButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>155</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>83 Power_Point.UploadForm.ClickDownloadButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>83</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickDownloadButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>156</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>89 Power_Point.UploadForm.ClickUpdateButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>89</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickUpdateButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>157</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>100 Power_Point.UploadForm.ClickDeleteButton(object, System.EventArgs)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power Point</Project>
-              <File>UploadForm.cs</File>
-              <Line>100</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>Power_Point.UploadForm.ClickDeleteButton(object, System.EventArgs)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>158</Id>
+              <Id>85</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>22 Power_Point.InsertPageCommand.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -2715,7 +1547,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>159</Id>
+              <Id>86</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>27 Power_Point.InsertPageCommand.ReverseExecute()</HashCode>
               <Severity>Red</Severity>
@@ -2731,7 +1563,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>160</Id>
+              <Id>87</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>42 GoogleDriveUploader.GoogleDrive.GoogleDriveService.CreateNewService(string, string)</HashCode>
               <Severity>Red</Severity>
@@ -2747,81 +1579,225 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>161</Id>
+              <Id>88</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>138 目前物件 Power_Point.Model，使用物件的方法或屬性次數：1次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageSelectedShapeIndex 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</HashCode>
+              <HashCode>60 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
+              <Line>60</Line>
+              <StartLine>60</StartLine>
+              <StartCol>26</StartCol>
+              <EndLine>60</EndLine>
+              <EndCol>64</EndCol>
+              <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>89</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>62 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shape，使用物件方法或屬性次數：6次，使用到的方法或屬性為以下：Power_Point.Shape.ShapeName 以及 Power_Point.Shape.IsSelected 以及 Power_Point.Shape.PointX1 以及 Power_Point.Shape.PointY1 以及 Power_Point.Shape.PointX2 以及 Power_Point.Shape.PointY2</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
+              <Line>62</Line>
+              <StartLine>61</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>62</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shape，使用物件方法或屬性次數：6次，使用到的方法或屬性為以下：Power_Point.Shape.ShapeName 以及 Power_Point.Shape.IsSelected 以及 Power_Point.Shape.PointX1 以及 Power_Point.Shape.PointY1 以及 Power_Point.Shape.PointX2 以及 Power_Point.Shape.PointY2</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>90</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>79 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.UpdateFile(string, string, string) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
+              <Line>79</Line>
+              <StartLine>78</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>79</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.UpdateFile(string, string, string) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>91</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>83 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.UploadFile(string, string, System.Action&lt;Google.Apis.Upload.IUploadProgress&gt;, System.Action&lt;Google.Apis.Drive.v2.Data.File&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
+              <Line>83</Line>
+              <StartLine>82</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>83</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.UploadFile(string, string, System.Action&lt;Google.Apis.Upload.IUploadProgress&gt;, System.Action&lt;Google.Apis.Drive.v2.Data.File&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>92</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>135 目前物件 Power_Point.Model，使用物件的方法或屬性次數：1次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageSelectedShapeIndex 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\Model\Model.cs</File>
-              <Line>138</Line>
-              <StartLine>137</StartLine>
+              <Line>135</Line>
+              <StartLine>134</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>138</EndLine>
+              <EndLine>135</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 Power_Point.Model，使用物件的方法或屬性次數：1次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageSelectedShapeIndex 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>162</Id>
+              <Id>93</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>184 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</HashCode>
+              <HashCode>181 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\Model\Model.cs</File>
-              <Line>184</Line>
-              <StartLine>184</StartLine>
+              <Line>181</Line>
+              <StartLine>181</StartLine>
               <StartCol>25</StartCol>
-              <EndLine>184</EndLine>
+              <EndLine>181</EndLine>
               <EndCol>89</EndCol>
               <Comment>目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>163</Id>
+              <Id>94</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>186 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</HashCode>
+              <HashCode>183 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\Model\Model.cs</File>
-              <Line>186</Line>
-              <StartLine>185</StartLine>
+              <Line>183</Line>
+              <StartLine>182</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>186</EndLine>
+              <EndLine>183</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.CurrentPageIndex</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>164</Id>
+              <Id>95</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>293 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.PageManager 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</HashCode>
+              <HashCode>290 目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.PageManager 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\Model\Model.cs</File>
-              <Line>293</Line>
-              <StartLine>293</StartLine>
+              <Line>290</Line>
+              <StartLine>290</StartLine>
               <StartCol>21</StartCol>
-              <EndLine>293</EndLine>
+              <EndLine>290</EndLine>
               <EndCol>83</EndCol>
               <Comment>目前物件 Power_Point.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Pages，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：Power_Point.Pages.CurrentPageIndex 以及 Power_Point.Pages.PageManager 以及 Power_Point.Pages.CurrentPageSelectedShapeIndex</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>165</Id>
+              <Id>96</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>242 目前物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</HashCode>
+              <HashCode>40 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\LoadForm.cs</File>
+              <Line>40</Line>
+              <StartLine>40</StartLine>
+              <StartCol>23</StartCol>
+              <EndLine>40</EndLine>
+              <EndCol>89</EndCol>
+              <Comment>目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>97</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>42 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\LoadForm.cs</File>
+              <Line>42</Line>
+              <StartLine>41</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>42</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>98</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>43 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：2次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\LoadForm.cs</File>
+              <Line>43</Line>
+              <StartLine>43</StartLine>
+              <StartCol>16</StartCol>
+              <EndLine>43</EndLine>
+              <EndCol>61</EndCol>
+              <Comment>目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：2次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>99</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>45 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：4次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：6次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\LoadForm.cs</File>
+              <Line>45</Line>
+              <StartLine>45</StartLine>
+              <StartCol>39</StartCol>
+              <EndLine>45</EndLine>
+              <EndCol>87</EndCol>
+              <Comment>目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：4次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：6次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>100</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>47 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：6次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：9次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>Power Point</Project>
+              <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\LoadForm.cs</File>
+              <Line>47</Line>
+              <StartLine>46</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>47</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：6次，Envy到對象物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件方法或屬性次數：9次，使用到的方法或屬性為以下：GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;) 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.ListRootFileAndFolder() 以及 GoogleDriveUploader.GoogleDrive.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string, System.Action&lt;Google.Apis.Download.IDownloadProgress&gt;)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>101</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>224 目前物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\GoogleDriveService.cs</File>
-              <Line>242</Line>
-              <StartLine>242</StartLine>
+              <Line>224</Line>
+              <StartLine>224</StartLine>
               <StartCol>48</StartCol>
-              <EndLine>242</EndLine>
+              <EndLine>224</EndLine>
               <EndCol>114</EndCol>
               <Comment>目前物件 GoogleDriveUploader.GoogleDrive.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</Comment>
               <Auto>false</Auto>
@@ -2882,6 +1858,16 @@
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
+                <RelativePath>EventArguments\FileDataEventArguments.cs</RelativePath>
+                <ProjectName>Power Point</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>EventArguments\ShapeEventArguments.cs</RelativePath>
+                <ProjectName>Power Point</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
                 <RelativePath>Factory.cs</RelativePath>
                 <ProjectName>Power Point</ProjectName>
                 <AnalysisFileType>Model</AnalysisFileType>
@@ -2927,22 +1913,22 @@
                 <AnalysisFileType>Designer</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
+                <RelativePath>ModalWindow\LoadForm.cs</RelativePath>
+                <ProjectName>Power Point</ProjectName>
+                <AnalysisFileType>ViewOrController</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>ModalWindow\LoadForm.Designer.cs</RelativePath>
+                <ProjectName>Power Point</ProjectName>
+                <AnalysisFileType>Designer</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
                 <RelativePath>ModalWindow\SaveForm.cs</RelativePath>
                 <ProjectName>Power Point</ProjectName>
                 <AnalysisFileType>ViewOrController</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>ModalWindow\SaveForm.Designer.cs</RelativePath>
-                <ProjectName>Power Point</ProjectName>
-                <AnalysisFileType>Designer</AnalysisFileType>
-              </AnalysisFile>
-              <AnalysisFile>
-                <RelativePath>ModalWindow\UploadForm.cs</RelativePath>
-                <ProjectName>Power Point</ProjectName>
-                <AnalysisFileType>ViewOrController</AnalysisFileType>
-              </AnalysisFile>
-              <AnalysisFile>
-                <RelativePath>ModalWindow\UploadForm.Designer.cs</RelativePath>
                 <ProjectName>Power Point</ProjectName>
                 <AnalysisFileType>Designer</AnalysisFileType>
               </AnalysisFile>
@@ -3003,11 +1989,6 @@
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\Shape.cs</RelativePath>
-                <ProjectName>Power Point</ProjectName>
-                <AnalysisFileType>Model</AnalysisFileType>
-              </AnalysisFile>
-              <AnalysisFile>
-                <RelativePath>ShapeEventArguments.cs</RelativePath>
                 <ProjectName>Power Point</ProjectName>
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
@@ -3113,7 +2094,7 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>3876</ProductionLoc>
+          <ProductionLoc>3507</ProductionLoc>
           <TestLoc>1544</TestLoc>
         </CodeReview>
       </Data>

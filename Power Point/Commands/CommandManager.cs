@@ -46,6 +46,13 @@ namespace Power_Point
                 _redoStack.Push(command);
             }
         }
+        
+        // Reset
+        public void Clear()
+        {
+            _redoStack.Clear();
+            _undoStack.Clear();
+        }
 
         // Get redo enable
         public bool RedoEnable

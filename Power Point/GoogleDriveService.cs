@@ -91,7 +91,7 @@ namespace GoogleDriveUploader.GoogleDrive
         public List<Google.Apis.Drive.v2.Data.File> ListRootFileAndFolder()
         {
             List<Google.Apis.Drive.v2.Data.File> returnList = new List<Google.Apis.Drive.v2.Data.File>();
-            const string ROOT_QUERY_STRING = "'root' in parents";
+            const string ROOT_QUERY_STRING = "'root' in parents and trashed=false";
 
             try
             {
@@ -160,7 +160,6 @@ namespace GoogleDriveUploader.GoogleDrive
 
             if (uploadProgressEventHandeler != null)
                 insertRequest.ProgressChanged += uploadProgressEventHandeler;
-
 
             if (responseReceivedEventHandler != null)
                 insertRequest.ResponseReceived += responseReceivedEventHandler;

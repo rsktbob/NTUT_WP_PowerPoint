@@ -29,7 +29,7 @@ namespace Power_Point
         public virtual string ShapeName
         {
             get 
-            { 
+            {
                 return Symbol.SHAPE; 
             }
         }
