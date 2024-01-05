@@ -995,7 +995,7 @@
         cAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="_uploadButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_saveButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABRgAAAUdCAYAAACT1S+uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAE0ESURBVHhe7d131K1nWefxNIqAJqKAIEVDVERRmuhCUIoj
@@ -1330,7 +1330,7 @@
         6f8DmmjIDCjZrxMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_downloadButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_loadButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABRgAAAUdCAYAAACT1S+uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAE19SURBVHhe7d1ruHVZWd55rCoOIkqJgICiCKgIjQdOJgiR

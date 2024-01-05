@@ -2,7 +2,7 @@
 
 namespace Power_Point
 {
-    partial class SaveForm
+    partial class LoadForm
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -30,34 +30,34 @@ namespace Power_Point
         /// </summary>
         private void InitializeComponent()
         {
-            this._saveButton = new System.Windows.Forms.Button();
+            this._loadButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // _saveButton
+            // _loadButton
             // 
-            this._saveButton.Location = new System.Drawing.Point(99, 12);
-            this._saveButton.Name = "_saveButton";
-            this._saveButton.Size = new System.Drawing.Size(75, 23);
-            this._saveButton.TabIndex = 0;
-            this._saveButton.Text = "Save";
-            this._saveButton.UseVisualStyleBackColor = true;
-            this._saveButton.Click += new System.EventHandler(this.ClickSaveButton);
+            this._loadButton.Location = new System.Drawing.Point(99, 12);
+            this._loadButton.Name = "_loadButton";
+            this._loadButton.Size = new System.Drawing.Size(75, 23);
+            this._loadButton.TabIndex = 0;
+            this._loadButton.Text = "Load";
+            this._loadButton.UseVisualStyleBackColor = true;
+            this._loadButton.Click += new System.EventHandler(this.CliclLoadButton);
             // 
-            // SaveForm
+            // LoadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(284, 43);
-            this.Controls.Add(this._saveButton);
-            this.Name = "SaveForm";
+            this.Controls.Add(this._loadButton);
+            this.Name = "LoadForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button _saveButton;
+        private System.Windows.Forms.Button _loadButton;
     }
 }
 

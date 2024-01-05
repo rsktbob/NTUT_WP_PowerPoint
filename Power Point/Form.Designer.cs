@@ -48,8 +48,8 @@ namespace Power_Point
             this._addPageButton = new System.Windows.Forms.ToolStripButton();
             this._undoButton = new System.Windows.Forms.ToolStripButton();
             this._redoButton = new System.Windows.Forms.ToolStripButton();
-            this._uploadButton = new System.Windows.Forms.ToolStripButton();
-            this._downloadButton = new System.Windows.Forms.ToolStripButton();
+            this._saveButton = new System.Windows.Forms.ToolStripButton();
+            this._loadButton = new System.Windows.Forms.ToolStripButton();
             this._canvasBackground = new System.Windows.Forms.Panel();
             this._canvas = new Power_Point.DoubleBufferedPanel();
             this._leftBorder = new System.Windows.Forms.Splitter();
@@ -175,8 +175,8 @@ namespace Power_Point
             this._addPageButton,
             this._undoButton,
             this._redoButton,
-            this._uploadButton,
-            this._downloadButton});
+            this._saveButton,
+            this._loadButton});
             this._shapeToolStrip.Location = new System.Drawing.Point(0, 24);
             this._shapeToolStrip.Name = "_shapeToolStrip";
             this._shapeToolStrip.Size = new System.Drawing.Size(1417, 25);
@@ -254,25 +254,25 @@ namespace Power_Point
             this._redoButton.Text = "toolStripButton2";
             this._redoButton.Click += new System.EventHandler(this.ClickRedoButton);
             // 
-            // _uploadButton
+            // _saveButton
             // 
-            this._uploadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._uploadButton.Image = ((System.Drawing.Image)(resources.GetObject("_uploadButton.Image")));
-            this._uploadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this._uploadButton.Name = "_uploadButton";
-            this._uploadButton.Size = new System.Drawing.Size(23, 22);
-            this._uploadButton.Text = "toolStripButton1";
-            this._uploadButton.Click += new System.EventHandler(this.ClickUploadButton);
+            this._saveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._saveButton.Image = ((System.Drawing.Image)(resources.GetObject("_saveButton.Image")));
+            this._saveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._saveButton.Name = "_saveButton";
+            this._saveButton.Size = new System.Drawing.Size(23, 22);
+            this._saveButton.Text = "toolStripButton1";
+            this._saveButton.Click += new System.EventHandler(this.ClickSaveButton);
             // 
-            // _downloadButton
+            // _loadButton
             // 
-            this._downloadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._downloadButton.Image = ((System.Drawing.Image)(resources.GetObject("_downloadButton.Image")));
-            this._downloadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this._downloadButton.Name = "_downloadButton";
-            this._downloadButton.Size = new System.Drawing.Size(23, 22);
-            this._downloadButton.Text = "toolStripButton2";
-            this._downloadButton.Click += new System.EventHandler(this.ClickDownloadButton);
+            this._loadButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._loadButton.Image = ((System.Drawing.Image)(resources.GetObject("_loadButton.Image")));
+            this._loadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._loadButton.Name = "_loadButton";
+            this._loadButton.Size = new System.Drawing.Size(23, 22);
+            this._loadButton.Text = "toolStripButton2";
+            this._loadButton.Click += new System.EventHandler(this.ClickLoadButton);
             // 
             // _canvasBackground
             // 
@@ -370,8 +370,8 @@ namespace Power_Point
         private System.Windows.Forms.ToolStripButton _undoButton;
         private System.Windows.Forms.ToolStripButton _redoButton;
         private System.Windows.Forms.ToolStripButton _addPageButton;
-        private System.Windows.Forms.ToolStripButton _uploadButton;
-        private System.Windows.Forms.ToolStripButton _downloadButton;
+        private System.Windows.Forms.ToolStripButton _saveButton;
+        private System.Windows.Forms.ToolStripButton _loadButton;
     }
 }
 

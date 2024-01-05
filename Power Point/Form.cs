@@ -161,8 +161,7 @@ namespace Power_Point
         // Handle page paint
         public void HandlePagePaint(object sender, PaintEventArgs e)
         {
-            Button currentPage = sender as Button;
-            int currentIndex = _pages.IndexOf(currentPage);
+            int currentIndex = _pages.IndexOf(sender as Button);
             _presentationModel.DrawPage(currentIndex, new FormGraphicsAdapter(e.Graphics));
         }
 
@@ -280,17 +279,34 @@ namespace Power_Point
             UpdateAllPagesAndCanvasPaint();
         }
 
-        // Click upload button
-        private void ClickUploadButton(object sender, EventArgs e)
+        // Click save button
+        private void ClickSaveButton(object sender, EventArgs e)
         {
+            _saveButton.Enabled = false;
             SaveForm saveForm = new SaveForm(_presentationModel.PageManager);
+            saveForm._uploadEndEvent += UploadEnd;
             saveForm.Show();
         }
 
-        // Click download button
-        private void ClickDownloadButton(object sender, EventArgs e)
+        // Click load button
+        private void ClickLoadButton(object sender, EventArgs e)
         {
+            LoadForm loadForm = new LoadForm();
+            loadForm._downloadEndEvent += DownloadEnd;
+            loadForm.Show();
+            Enabled = false;
+        }
 
+        // Upload end
+        private void UploadEnd(object sender, EventArgs e)
+        {
+            _saveButton.Enabled = true;
+        }
+
+        // Download end
+        private void DownloadEnd(object sender, EventArgs e)
+        {
+            Enabled = true;
         }
     }
 }

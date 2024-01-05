@@ -72,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\DeletePageCommand.cs" />
+    <Compile Include="ModalWindow\LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalWindow\LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalWindow\SaveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Page\Shapes.cs" />
     <Compile Include="State\PointState.cs" />
     <Compile Include="Symbol.cs" />
+    <EmbeddedResource Include="ModalWindow\LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModalWindow\SaveForm.resx">
       <DependentUpon>SaveForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,9 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Sample.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
