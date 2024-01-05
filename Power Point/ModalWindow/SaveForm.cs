@@ -17,11 +17,15 @@ namespace Power_Point
     {
         private GoogleDriveService _service;
         string _currentDirectory;
+        List<List<List<object>>> _data;
+        const string CONTENT_TYPE = "application/json";
+        const string FILE_NAME = "data.json";
 
-        public SaveForm()
+        public SaveForm(List<Shapes> pageManager)
         {
             InitializeComponent();
             _currentDirectory = Directory.GetCurrentDirectory();
+            _data = CovertPageManager(pageManager);
         }
 
         // Load save form
@@ -36,32 +40,42 @@ namespace Power_Point
         // Click save button
         private void ClickSaveButton(object sender, EventArgs e)
         {
-            List<List<List<object>>> lst1 = new List<List<List<object>>> { new List<List<object>>
-            {   new List<object> { "client", 3, 6, 14, 8},
-                new List<object> {"dessert", 21, 8, 6, 14 } },
-             new List<List<object>> {
-                 new List<object> { "circle", 3, 6, 14, 8},
-                 new List<object> {"square", 21, 8, 6, 14 }}
-             };
-
-            // 將List轉換為JSON格式字串
-            string json = JsonConvert.SerializeObject(lst1);
-
-            // 輸出JSON格式字串
-            Console.WriteLine(json);
-
-            // 指定檔案路徑和檔名
-            string filePath = "data.json";
+            string jsonText = JsonConvert.SerializeObject(_data);
+            string fileName = Path.Combine(_currentDirectory, FILE_NAME);
 
             // 寫入JSON資料到檔案
-            File.WriteAllText(filePath, json);
-
-            if (File.Exists(filePath))
+            File.WriteAllText(fileName, jsonText);
+            if (File.Exists(fileName))
             {
-                string jsonFile = File.ReadAllText(filePath);
-
-                List<List<List<object>>> lst2 = JsonConvert.DeserializeObject<List<List<List<object>>>>(jsonFile);
+                List<Google.Apis.Drive.v2.Data.File> fileList = _service.ListRootFileAndFolder();
+                Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item => { return item.Title == "data.json"; });
+                if (foundFile != null)
+                {
+                    _service.UpdateFile("data.json", foundFile.Id, CONTENT_TYPE);
+                }
+                else
+                {
+                    _service.UploadFile(fileName, CONTENT_TYPE);
+                }
+                File.Delete(fileName);
             }
+            Close();
+        }
+
+        // pageManager corvert to list<list<list<object>>>
+        private List<List<List<object>>> CovertPageManager(List<Shapes> pageManager)
+        {
+            List<List<List<object>>> data = new List<List<List<object>>>();
+            for (int i = 0; i < pageManager.Count; i++)
+            {
+                data.Add(new List<List<object>>());
+                for (int j = 0; j < pageManager[i].ShapeManager.Count; j++)
+                {
+                    Shape shape = pageManager[i].ShapeManager[j];
+                    data[i].Add(new List<object> { shape.ShapeName, shape.PointX1, shape.PointY1, shape.PointX2, shape.PointY2 });
+                }
+            }
+            return data;
         }
     }
 }

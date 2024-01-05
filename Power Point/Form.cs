@@ -40,7 +40,6 @@ namespace Power_Point
             // Initialize pages
             _pages = new List<Button>();
             _pages.Add(_page1);
-            _page1 = null;
 
             // Add canvas and pages update event
             _presentationModel.ModelChanged += UpdateAllPagesAndCanvasPaint;
@@ -75,8 +74,7 @@ namespace Power_Point
         // Add shape
         public void ClickAddShapeButton(object sender, EventArgs e)
         {
-            string shapeType = _shapeComboBox.Text;
-            AddShapeForm addShapeForm = new AddShapeForm(shapeType);
+            AddShapeForm addShapeForm = new AddShapeForm(_shapeComboBox.Text);
             addShapeForm._clickOkButtonEvent += ClickAddShapeFormOkButton;
             addShapeForm.Show();
             UpdatePanel();
@@ -203,6 +201,7 @@ namespace Power_Point
             }
             while (_pages.Count < _presentationModel.PagesCount)
                 _pages.Add(GetNewPage());
+            UpdatePageSelected();
         }
 
         // Update all pages and canvas paint
@@ -238,7 +237,6 @@ namespace Power_Point
             Button newPage = new Button();
             newPage.BackColor = SystemColors.ButtonHighlight;
             newPage.Size = _pages[0].Size;
-            newPage.TabIndex = 0;
             newPage.UseVisualStyleBackColor = true;
             newPage.FlatAppearance.BorderColor = Color.FromArgb(0, 107, 190);
             newPage.FlatAppearance.BorderSize = Symbol.TWO;
@@ -251,10 +249,8 @@ namespace Power_Point
         // Click page
         private void ClickPage(object sender, EventArgs e)
         {
-            Button currentPage = sender as Button;
             _addShapeButton.Focus();
-            int index = _pages.IndexOf(currentPage);
-            _presentationModel.SetCurrentPageIndex(index);
+            _presentationModel.SetCurrentPageIndex(_pages.IndexOf((sender as Button)));
             UpdatePageSelected();
             UpdateAllPagesAndCanvasPaint();
         }
@@ -262,10 +258,8 @@ namespace Power_Point
         // Update page selected
         private void UpdatePageSelected()
         {
-            for (int i = 0; i < _pages.Count; i++)
-            {
-                _pages[i].FlatStyle = FlatStyle.Standard;
-            }
+            foreach (Button page in _pages)
+                page.FlatStyle = FlatStyle.Standard;
             _pages[_presentationModel.CurrentPageIndex].FlatStyle = FlatStyle.Flat;
             _shapeDataGridView.DataSource = _presentationModel.CurrentShapeManager;
         }
@@ -289,7 +283,7 @@ namespace Power_Point
         // Click upload button
         private void ClickUploadButton(object sender, EventArgs e)
         {
-            SaveForm saveForm = new SaveForm();
+            SaveForm saveForm = new SaveForm(_presentationModel.PageManager);
             saveForm.Show();
         }
 

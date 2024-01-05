@@ -16,22 +16,19 @@ namespace Power_Point
         // Line state
         public bool LineChecked
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Rectangle state
         public bool RectangleChecked
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Circle state
         public bool CircleChecked
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Get general checked
@@ -55,15 +52,13 @@ namespace Power_Point
         // Get canvas size
         public Size CanvasSize
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Get page size
         public Size PageSize
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Get page count
@@ -78,8 +73,7 @@ namespace Power_Point
         // Canvas positon
         public Point CanvasPosition
         {
-            get;
-            private set;
+            get; private set;
         }
 
         // Get redo enale
@@ -124,6 +118,15 @@ namespace Power_Point
             get
             {
                 return _model.CurrentShapeManager;
+            }
+        }
+
+        // Get pageManager
+        public List<Shapes> PageManager
+        {
+            get
+            {
+                return _model.PageManager;
             }
         }
 
