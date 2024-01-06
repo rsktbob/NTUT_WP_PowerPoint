@@ -1,0 +1,45 @@
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\clientSecret.json
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Power PointGuiTests.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Power PointGuiTests.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Appium.Net.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Castle.Core.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Newtonsoft.Json.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Power Point.exe
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\SeleniumExtras.PageObjects.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\System.Drawing.Common.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\WebDriver.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\WebDriver.Support.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Drive.v2.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Auth.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Core.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Power Point.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Power Point.exe.config
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Appium.Net.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Castle.Core.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Newtonsoft.Json.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\WebDriver.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\WebDriver.Support.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Drive.v2.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Drive.v2.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Auth.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Auth.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Core.pdb
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\bin\Debug\Google.Apis.Core.xml
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\obj\Debug\Power PointGuiTests.csproj.AssemblyReference.cache
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\obj\Debug\Power PointGuiTests.csproj.CoreCompileInputs.cache
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\obj\Debug\Power PointGuiTests.csproj.CopyComplete
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\obj\Debug\Power PointGuiTests.dll
+D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\obj\Debug\Power PointGuiTests.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power Point", "Power Point\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power PointTests", "Power PointTests\Power PointTests.csproj", "{1E8FD83B-D4A4-4770-952D-4447E78C6533}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power PointGuiTests", "Power PointGuiTests\Power PointGuiTests.csproj", "{400867ED-2DB1-4502-A2F4-FD166A192C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1E8FD83B-D4A4-4770-952D-4447E78C6533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8FD83B-D4A4-4770-952D-4447E78C6533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8FD83B-D4A4-4770-952D-4447E78C6533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400867ED-2DB1-4502-A2F4-FD166A192C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400867ED-2DB1-4502-A2F4-FD166A192C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400867ED-2DB1-4502-A2F4-FD166A192C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400867ED-2DB1-4502-A2F4-FD166A192C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

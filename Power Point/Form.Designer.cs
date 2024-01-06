@@ -51,9 +51,9 @@ namespace Power_Point
             this._saveButton = new System.Windows.Forms.ToolStripButton();
             this._loadButton = new System.Windows.Forms.ToolStripButton();
             this._canvasBackground = new System.Windows.Forms.Panel();
-            this._canvas = new Power_Point.DoubleBufferedPanel();
             this._leftBorder = new System.Windows.Forms.Splitter();
             this._rightBorder = new System.Windows.Forms.Splitter();
+            this._canvas = new Power_Point.DoubleBufferedPanel();
             this._menuStrip.SuspendLayout();
             this._dataGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._shapeDataGridView)).BeginInit();
@@ -101,6 +101,7 @@ namespace Power_Point
             // 
             // _addShapeButton
             // 
+            this._addShapeButton.AccessibleName = "";
             this._addShapeButton.Location = new System.Drawing.Point(17, 25);
             this._addShapeButton.Name = "_addShapeButton";
             this._addShapeButton.Size = new System.Drawing.Size(64, 41);
@@ -206,6 +207,7 @@ namespace Power_Point
             // 
             // _circleButton
             // 
+            this._circleButton.AccessibleName = "";
             this._circleButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._circleButton.Image = ((System.Drawing.Image)(resources.GetObject("_circleButton.Image")));
             this._circleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -285,18 +287,6 @@ namespace Power_Point
             this._canvasBackground.TabIndex = 0;
             this._canvasBackground.Resize += new System.EventHandler(this.UpdateCanvasSize);
             // 
-            // _canvas
-            // 
-            this._canvas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._canvas.Location = new System.Drawing.Point(15, 44);
-            this._canvas.Name = "_canvas";
-            this._canvas.Size = new System.Drawing.Size(960, 540);
-            this._canvas.TabIndex = 13;
-            this._canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleCanvasPaint);
-            this._canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerPressed);
-            this._canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerMoved);
-            this._canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerReleased);
-            // 
             // _leftBorder
             // 
             this._leftBorder.BackColor = System.Drawing.SystemColors.GrayText;
@@ -315,6 +305,18 @@ namespace Power_Point
             this._rightBorder.Size = new System.Drawing.Size(3, 665);
             this._rightBorder.TabIndex = 14;
             this._rightBorder.TabStop = false;
+            // 
+            // _canvas
+            // 
+            this._canvas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this._canvas.Location = new System.Drawing.Point(15, 44);
+            this._canvas.Name = "_canvas";
+            this._canvas.Size = new System.Drawing.Size(960, 540);
+            this._canvas.TabIndex = 13;
+            this._canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.HandleCanvasPaint);
+            this._canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerPressed);
+            this._canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerMoved);
+            this._canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HandleCanvasPointerReleased);
             // 
             // Form
             // 
