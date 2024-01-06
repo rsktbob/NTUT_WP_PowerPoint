@@ -71,7 +71,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\DeletePageCommand.cs" />
+    <Compile Include="Commands\DeleteCurrentPageCommand.cs" />
+    <Compile Include="Commands\DeleteSelectedCommand.cs" />
     <Compile Include="EventArguments\FileDataEventArguments.cs" />
     <Compile Include="ModalWindow\LoadForm.cs">
       <SubType>Form</SubType>

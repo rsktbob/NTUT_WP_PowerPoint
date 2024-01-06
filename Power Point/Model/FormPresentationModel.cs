@@ -13,25 +13,21 @@ namespace Power_Point
         private Model _model;
         private double _interval;
         
-        // Line state
         public bool LineChecked
         {
             get; private set;
         }
 
-        // Rectangle state
         public bool RectangleChecked
         {
             get; private set;
         }
 
-        // Circle state
         public bool CircleChecked
         {
             get; private set;
         }
 
-        // Get general checked
         public bool GeneralChecked
         {
             get
@@ -40,7 +36,6 @@ namespace Power_Point
             }
         }
 
-        // Get paint state
         public bool PaintState
         {
             get
@@ -49,34 +44,29 @@ namespace Power_Point
             }
         }
 
-        // Get canvas size
         public Size CanvasSize
         {
             get; private set;
         }
 
-        // Get page size
         public Size PageSize
         {
             get; private set;
         }
 
-        // Get page count
         public int PagesCount
         {
             get
             {
-                return _model.PageManager.Count;
+                return _model.AllPages.PageCount;
             }
         }
 
-        // Canvas positon
         public Point CanvasPosition
         {
             get; private set;
         }
 
-        // Get redo enale
         public bool RedoEnable
         {
             get
@@ -85,7 +75,6 @@ namespace Power_Point
             }
         }
 
-        // Get undo enable
         public bool UndoEnable
         {
             get
@@ -94,7 +83,6 @@ namespace Power_Point
             }
         }
 
-        // Get isscaling state
         public bool IsScaling
         {
             get
@@ -103,16 +91,14 @@ namespace Power_Point
             }
         }
 
-        // Get current page index
         public int CurrentPageIndex
         {
             get
             {
-                return _model.CurrentPages.CurrentPageIndex;
+                return _model.AllPages.CurrentPageIndex;
             }
         }
 
-        // Get current shapeManager
         public BindingList<Shape> CurrentShapeManager
         {
             get
@@ -121,16 +107,14 @@ namespace Power_Point
             }
         }
 
-        // Get pageManager
         public List<Shapes> PageManager
         {
             get
             {
-                return _model.PageManager;
+                return _model.AllPages.PageManager;
             }
         }
 
-        // Get ModelChangee
         public Model.ModelChangedEventHandler ModelChanged
         {
             get

@@ -16,7 +16,6 @@ namespace Power_Point
         private CommandManager _commandManager;
         IState _state;
 
-        // Get Shapes
         public BindingList<Shape> CurrentShapeManager
         {
             get
@@ -25,22 +24,27 @@ namespace Power_Point
             }
         }
 
-        // Get page manager
-        public List<Shapes> PageManager
+        public int CurrentPageIndex
         {
             get
             {
-                return _pages.PageManager;
+                return _pages.CurrentPageIndex;
             }
         }
 
-        // Get ModelChangee
+        public int CurrentPageSelectedShapeIndex
+        {
+            get
+            {
+                return _pages.CurrentPageSelectedShapeIndex;
+            }
+        }
+
         public ModelChangedEventHandler ModelChanged
         {
             get; set;
         }
 
-        // Get IsScaling
         public bool IsScaling
         {
             get
@@ -58,7 +62,6 @@ namespace Power_Point
             }
         }
 
-        // Get undo enable
         public bool UndoEnable
         {
             get
@@ -67,7 +70,6 @@ namespace Power_Point
             }
         }
 
-        // Get canvas ratio
         private double CanvasRatio
         {
             get
@@ -76,7 +78,6 @@ namespace Power_Point
             }
         }
 
-        // Get page ratio
         private double PageRatio
         {
             get
@@ -85,8 +86,7 @@ namespace Power_Point
             }
         }
 
-        // Get current pages
-        public Pages CurrentPages
+        public Pages AllPages
         {
             get
             {
@@ -130,10 +130,9 @@ namespace Power_Point
         // Push delete selected shape command
         public void PushDeleteSelectedCommand()
         {
-            if (_pages.CurrentPageSelectedShapeIndex != -1)
-            {
-                PushDeleteCommand(_pages.CurrentPageSelectedShapeIndex);
-            }
+            ICommand command = new DeleteSelectedCommand(_pages.CurrentShapes);
+            _commandManager.ExecuteCommand(command);
+            NotifyModelChanged();
         }
 
         // Push draw shape command
@@ -147,23 +146,21 @@ namespace Power_Point
         // Push move shape command
         public void PushMoveCommand(int startPointX, int startPointY, int endPointX, int endPointY)
         {
-            if (startPointX != endPointX || startPointY != endPointY)
-            {
-                ICommand command = new MoveCommand(_pages.CurrentShapes, startPointX, startPointY, endPointX, endPointY);
-                _commandManager.ExecuteCommand(command);
-                NotifyModelChanged();
-            }
+            if (startPointX == endPointX || startPointY == endPointY)
+                return;
+            ICommand command = new MoveCommand(_pages.CurrentShapes, startPointX, startPointY, endPointX, endPointY);
+            _commandManager.ExecuteCommand(command);
+            NotifyModelChanged();
         }
 
         // Push scale shape command
         public void PushScaleCommand(int startPointX, int startPointY, int endPointX, int endPointY)
         {
-            if (startPointX != endPointX || startPointY != endPointY)
-            {
-                ICommand command = new ScaleCommand(_pages.CurrentShapes, startPointX, startPointY, endPointX, endPointY);
-                _commandManager.ExecuteCommand(command);
-                NotifyModelChanged();
-            }
+            if (startPointX == endPointX && startPointY == endPointY)
+                return;
+            ICommand command = new ScaleCommand(_pages.CurrentShapes, startPointX, startPointY, endPointX, endPointY);
+            _commandManager.ExecuteCommand(command);
+            NotifyModelChanged();
         }
 
         // Push insert page command
@@ -192,9 +189,7 @@ namespace Power_Point
             {
                 _pages.CurrentShapes.Draw(graphics, CanvasRatio);
                 if (_hint != null)
-                {
                     _hint.Draw(graphics, CanvasRatio);
-                }
             }
         }
 
@@ -205,9 +200,7 @@ namespace Power_Point
             {
                 _pages.PageManager[index].Draw(graphics, PageRatio);
                 if (_hint != null && index == _pages.CurrentPageIndex)
-                {
                     _hint.Draw(graphics, PageRatio);
-                }
             }
         }
 
@@ -262,9 +255,7 @@ namespace Power_Point
         private void NotifyModelChanged()
         {
             if (ModelChanged != null)
-            {
                 ModelChanged();
-            }
         }
 
         // Undo
@@ -284,24 +275,17 @@ namespace Power_Point
         // Press delete
         public void PressDelete()
         {
-            if (_pages.CurrentPageSelectedShapeIndex != -1)
-            {
+            if (CurrentPageSelectedShapeIndex != -1)
                 PushDeleteSelectedCommand();
-            }
-            else if (_pages.CurrentPageIndex != -1 && _pages.PageManager.Count != 1)
-            {
+            else if (CurrentPageIndex != -1 && _pages.PageCount != 1)
                 PushDeleteCurrentPageCommand();
-            }
         }
 
         // Set current page index
         public void SetCurrentPageIndex(int index)
         {
             _pages.SetCurrentPageIndex(index);
-            if (_state is PointState)
-            {
-                _state = new PointState(this, _pages.CurrentShapes);
-            }
+            _state = _state is PointState ? new PointState(this, _pages.CurrentShapes) : _state;
             NotifyModelChanged();
         }
 

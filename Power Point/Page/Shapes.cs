@@ -112,9 +112,7 @@ namespace Power_Point
             for (int i = 0; i < ShapeManager.Count; i++)
             {
                 if (ShapeManager[i].IsSelected)
-                {
                     SelectedShapeIndex = i;
-                }
             }
         }
 
@@ -127,9 +125,7 @@ namespace Power_Point
                 int pointY2 = ShapeManager[SelectedShapeIndex].PointY2;
                 if (pointX2 - Symbol.EIGHT <= pointX && pointX <= pointX2 + Symbol.EIGHT &&
                     pointY2 - Symbol.EIGHT <= pointY && pointY <= pointY2 + Symbol.EIGHT)
-                {
                     return true;
-                }
             }
             return false;
         }

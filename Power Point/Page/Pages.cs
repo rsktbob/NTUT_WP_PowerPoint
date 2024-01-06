@@ -15,7 +15,6 @@ namespace Power_Point
             private set;
         }
 
-        // Get current shape manager
         public BindingList<Shape> CurrentShapeManager
         {
             get
@@ -24,7 +23,6 @@ namespace Power_Point
             }
         }
 
-        // Get current shapes
         public Shapes CurrentShapes
         {
             get
@@ -33,7 +31,14 @@ namespace Power_Point
             }
         }
 
-        // Get current select shape index
+        public int PageCount
+        {
+            get
+            {
+                return PageManager.Count;
+            }
+        }
+
         public int CurrentPageSelectedShapeIndex
         {
             get
@@ -42,7 +47,6 @@ namespace Power_Point
             }
         }
 
-        // Get page manager
         public List<Shapes> PageManager
         {
             get;
@@ -90,9 +94,7 @@ namespace Power_Point
             {
                 Shapes shapes = new Shapes();
                 for (int j = 0; j < fileData[i].Count; j++)
-                {
                     shapes.AddShape(fileData[i][j]);
-                }
                 PageManager.Add(shapes);
             }
             SetCurrentPageIndex(0);

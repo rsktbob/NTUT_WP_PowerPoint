@@ -28,9 +28,7 @@ namespace Power_Point
             _ratio = ratio;
             graphics.DrawRectangle(PaintPointX1, PaintPointY1, PaintPointX2, PaintPointY2);
             if (IsSelected)
-            {
                 graphics.DrawShapeSelected(PaintPointX1, PaintPointY1, PaintPointX2, PaintPointY2);
-            }
         }
     }
 }
