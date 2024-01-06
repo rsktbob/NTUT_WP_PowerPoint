@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GoogleDriveUploader.GoogleDrive;
 using System.IO;
 using Newtonsoft.Json;
+using System.Threading;
 
 namespace Power_Point
 {
@@ -40,7 +40,6 @@ namespace Power_Point
             string fileText = JsonConvert.SerializeObject(fileData);
             string filePath = Path.Combine(currentDirectory, FILE_NAME);
             File.WriteAllText(filePath, fileText);
-            await Task.Delay(3000);
             await Upload(filePath);
             if (_uploadEndEvent != null)
             {
@@ -54,33 +53,30 @@ namespace Power_Point
         {
             await Task.Run(() =>
             {
+                Thread.Sleep(10000);
                 if (File.Exists(filePath))
                 {
                     List<Google.Apis.Drive.v2.Data.File> fileList = _service.ListRootFileAndFolder();
                     Google.Apis.Drive.v2.Data.File foundFile = fileList.Find(item => item.Title == FILE_NAME);
                     if (foundFile != null)
-                    {
                         _service.UpdateFile(FILE_NAME, foundFile.Id, CONTENT_TYPE);
-                    }
                     else
-                    {
                         _service.UploadFile(filePath, CONTENT_TYPE);
-                    }
                     File.Delete(filePath);
                 }
             });
         }
 
         // Transform pageManager
-        private List<List<Shape>> TransformPageManager(List<Shapes> PageManager)
+        private List<List<Shape>> TransformPageManager(List<Shapes> pageManager)
         {
             List<List<Shape>> fileData = new List<List<Shape>>();
-            for (int i =0; i < PageManager.Count; i++)
+            for (int i = 0; i < pageManager.Count; i++)
             {
                 fileData.Add(new List<Shape>());
-                for (int j = 0; j < PageManager[i].ShapeManager.Count; j++)
+                for (int j = 0; j < pageManager[i].ShapeManager.Count; j++)
                 {
-                    fileData[i].Add(PageManager[i].ShapeManager[j]);
+                    fileData[i].Add(pageManager[i].ShapeManager[j]);
                 }
             }
             return fileData;

@@ -19,11 +19,13 @@ namespace Power_Point
             _shapes = new Shapes();
         }
 
+        // Execute insert page command
         public void Execute()
         {
             _pages.InsertPage(_nextIndex, _shapes);
         }
 
+        // Reverser execute insert page command
         public void ReverseExecute()
         {
             _pages.DeletePage(_nextIndex);

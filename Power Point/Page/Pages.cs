@@ -83,15 +83,15 @@ namespace Power_Point
         }
 
         // Load file data
-        public void LoadFileData(List<List<Shape>> filedata)
+        public void LoadFileData(List<List<Shape>> fileData)
         {
             PageManager.Clear();
-            for (int i = 0; i < filedata.Count; i++)
+            for (int i = 0; i < fileData.Count; i++)
             {
                 Shapes shapes = new Shapes();
-                for (int j = 0; j < filedata[i].Count; j++)
+                for (int j = 0; j < fileData[i].Count; j++)
                 {
-                    shapes.AddShape(filedata[i][j]);
+                    shapes.AddShape(fileData[i][j]);
                 }
                 PageManager.Add(shapes);
             }

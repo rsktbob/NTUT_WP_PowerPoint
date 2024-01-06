@@ -179,7 +179,7 @@ namespace Power_Point
         {
             if (_pages.CurrentPageIndex != -1)
             {
-                ICommand command = new DeletePageCommand(_pages, _pages.CurrentPageIndex);
+                ICommand command = new DeletePageCommand(_pages);
                 _commandManager.ExecuteCommand(command);
                 NotifyModelChanged();
             }

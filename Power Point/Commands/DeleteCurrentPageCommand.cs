@@ -12,11 +12,11 @@ namespace Power_Point
         private Shapes _shapes;
         private int _index;
 
-        public DeletePageCommand(Pages pages, int index)
+        public DeletePageCommand(Pages pages)
         {
             _pages = pages;
-            _shapes = pages.PageManager[index];
-            _index = index;
+            _shapes = pages.PageManager[pages.CurrentPageIndex];
+            _index = pages.CurrentPageIndex;
         }
 
         // Execute delete page command

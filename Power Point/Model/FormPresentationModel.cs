@@ -247,7 +247,7 @@ namespace Power_Point
         {
             if (canvasBackgroundHeight >= canvasBackgroundWidth * Symbol.CANVAS_ASPECT_RATIO)
             {
-                CanvasSize = new Size(canvasBackgroundWidth - Symbol.CANVAS_LOCATION * Symbol.TWO, (int)((canvasBackgroundWidth - Symbol.CANVAS_LOCATION * 2) * Symbol.CANVAS_ASPECT_RATIO));
+                CanvasSize = new Size(canvasBackgroundWidth - Symbol.CANVAS_LOCATION * Symbol.TWO, (int)((canvasBackgroundWidth - Symbol.CANVAS_LOCATION * Symbol.TWO) * Symbol.CANVAS_ASPECT_RATIO));
                 CanvasPosition = new Point(Symbol.CANVAS_LOCATION, (canvasBackgroundHeight - CanvasSize.Height) / Symbol.TWO);
             }
             else
@@ -263,7 +263,7 @@ namespace Power_Point
         {
             if (pageBackgroundWidth != -1)
             {
-                PageSize = new Size(pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2, (int)((pageBackgroundWidth - Symbol.PAGES_LOCATION_X * 2) * Symbol.CANVAS_ASPECT_RATIO));
+                PageSize = new Size(pageBackgroundWidth - Symbol.PAGES_LOCATION_X * Symbol.TWO, (int)((pageBackgroundWidth - Symbol.PAGES_LOCATION_X * Symbol.TWO) * Symbol.CANVAS_ASPECT_RATIO));
                 _interval = Symbol.PAGE_INTERVAL * ((double)PageSize.Width / Symbol.PAGE_WIDTH);
                 _model.PageSize = PageSize;
             }
