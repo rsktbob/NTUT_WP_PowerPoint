@@ -251,14 +251,14 @@ namespace Power_Point.Tests
             Shape ResultShape = (Shape)GetPrivateField(_model, "_hint");
 
             _model.HandlePointerPressed(-1, -1);
-            
+
             Assert.AreEqual(0, ResultShape.PointX1);
             Assert.AreEqual(0, ResultShape.PointY1);
             Assert.AreEqual(0, ResultShape.PointX2);
             Assert.AreEqual(0, ResultShape.PointY2);
 
             _model.HandlePointerPressed(1, 3);
-            
+
             Assert.AreEqual(1, ResultShape.PointX1);
             Assert.AreEqual(3, ResultShape.PointY1);
             Assert.AreEqual(1, ResultShape.PointX2);

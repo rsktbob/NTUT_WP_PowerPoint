@@ -90,21 +90,21 @@ namespace Power_Point
         }
 
         // Click line button
-        private void ClickLineButton(object sender, EventArgs e)
+        public void ClickLineButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.LINE);
             UpdateDrawState();
         }
 
         // Click rectangle button
-        private void ClickRectangleButton(object sender, EventArgs e)
+        public void ClickRectangleButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.RECTANGLE);
             UpdateDrawState();
         }
 
         // Click circle button
-        private void ClickCircleButton(object sender, EventArgs e)
+        public void ClickCircleButton(object sender, EventArgs e)
         {
             _presentationModel.SetState(Symbol.CIRCLE);
             UpdateDrawState();

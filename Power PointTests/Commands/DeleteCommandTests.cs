@@ -18,9 +18,9 @@ namespace Power_Point.Tests
             Model model = new Model();
             model.AddCurrentPageShape(new Circle(0, 0, 0, 0));
             DeleteCommand command = new DeleteCommand(model, 0);
-            
+
             command.Execute();
-            
+
             Assert.AreEqual(0, model.CurrentShapeManager.Count);
         }
 
@@ -32,9 +32,9 @@ namespace Power_Point.Tests
             model.AddCurrentPageShape(new Circle(0, 0, 0, 0));
             model.AddCurrentPageShape(new Rectangle(0, 0, 0, 0));
             DeleteCommand command = new DeleteCommand(model, 1);
-            
+
             command.Execute();
-            
+
             Assert.AreEqual(1, model.CurrentShapeManager.Count);
         }
 
@@ -45,7 +45,7 @@ namespace Power_Point.Tests
             Model model = new Model();
             model.AddCurrentPageShape(new Circle(0, 0, 0, 0));
             DeleteCommand command = new DeleteCommand(model, 0);
-            
+
             command.Execute();
 
             Assert.AreEqual(0, model.CurrentShapeManager.Count);

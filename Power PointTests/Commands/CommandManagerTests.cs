@@ -20,7 +20,7 @@ namespace Power_Point.Tests
 
             Stack<ICommand> redoStack = (Stack<ICommand>)GetPrivateField(commandManager, "_redoStack");
             Stack<ICommand> undoStack = (Stack<ICommand>)GetPrivateField(commandManager, "_undoStack");
-            
+
             Assert.AreEqual(0, redoStack.Count);
             Assert.AreEqual(0, undoStack.Count);
         }
@@ -47,7 +47,7 @@ namespace Power_Point.Tests
             ICommand command = new AddCommand(model, Symbol.RECTANGLE);
             commandManager.Redo();
 
-            commandManager.ExecuteCommand(command);;
+            commandManager.ExecuteCommand(command); ;
             commandManager.Undo();
 
             Assert.AreEqual(0, model.CurrentShapeManager.Count);

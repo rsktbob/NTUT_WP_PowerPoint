@@ -75,7 +75,7 @@ namespace Power_Point.Tests
             Shape ResultHint = (Shape)GetPrivateField(drawingState, "_hint");
 
             drawingState.HandleMouseUp(140, 260);
-            
+
             Assert.IsFalse((bool)GetPrivateField(drawingState, "_isPressed"));
 
             drawingState.HandleMouseDown(140, 260);

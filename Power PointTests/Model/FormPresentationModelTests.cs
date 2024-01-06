@@ -49,7 +49,7 @@ namespace Power_Point.Tests
         public void AddShapeTest()
         {
             _formPresentationModel.AddShape(Symbol.CIRCLE);
-            
+
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
         }
 
@@ -58,11 +58,11 @@ namespace Power_Point.Tests
         public void DeleteShapeTest()
         {
             _formPresentationModel.AddShape(Symbol.CIRCLE);
-            
+
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
 
             _formPresentationModel.DeleteShape(0);
-            
+
             Assert.AreEqual(0, _formPresentationModel.CurrentShapeManager.Count);
         }
 
@@ -71,7 +71,7 @@ namespace Power_Point.Tests
         public void SetStateTest()
         {
             _formPresentationModel.SetState(Symbol.LINE);
-            
+
             Assert.IsTrue(_formPresentationModel.LineChecked);
             Assert.IsFalse(_formPresentationModel.CircleChecked);
             Assert.IsFalse(_formPresentationModel.RectangleChecked);
@@ -79,7 +79,7 @@ namespace Power_Point.Tests
             Assert.IsFalse(_formPresentationModel.GeneralChecked);
 
             _formPresentationModel.SetState(Symbol.CIRCLE);
-            
+
             Assert.IsFalse(_formPresentationModel.LineChecked);
             Assert.IsTrue(_formPresentationModel.CircleChecked);
             Assert.IsFalse(_formPresentationModel.RectangleChecked);
@@ -87,7 +87,7 @@ namespace Power_Point.Tests
             Assert.IsFalse(_formPresentationModel.GeneralChecked);
 
             _formPresentationModel.SetState(Symbol.RECTANGLE);
-            
+
             Assert.IsFalse(_formPresentationModel.LineChecked);
             Assert.IsFalse(_formPresentationModel.CircleChecked);
             Assert.IsTrue(_formPresentationModel.RectangleChecked);
@@ -95,7 +95,7 @@ namespace Power_Point.Tests
             Assert.IsFalse(_formPresentationModel.GeneralChecked);
 
             _formPresentationModel.SetState(Symbol.GENERAL);
-            
+
             Assert.IsFalse(_formPresentationModel.LineChecked);
             Assert.IsFalse(_formPresentationModel.CircleChecked);
             Assert.IsFalse(_formPresentationModel.RectangleChecked);
@@ -106,7 +106,7 @@ namespace Power_Point.Tests
         // Set canvas size
         [TestMethod()]
         public void SetCanvasSizeTest()
-        { 
+        {
             _formPresentationModel.SetCanvasSize(300, 500);
 
             Assert.AreEqual(300, GetPrivateField(_model, "_canvasWidth"));

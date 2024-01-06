@@ -16,7 +16,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void PointStateTest()
         {
-            PointState pointState = new PointState(new Model(),new Shapes());
+            PointState pointState = new PointState(new Model(), new Shapes());
 
             Shapes ResultShapes = (Shapes)GetPrivateField(pointState, "_shapes");
 
@@ -30,7 +30,7 @@ namespace Power_Point.Tests
             Model model = new Model();
             Shapes shapes = (Shapes)GetPrivateField(model, "_shapes");
             Shape circle = new Circle(20, 30, 140, 180);
-            model.AddCurrentPageShape(circle);           
+            model.AddCurrentPageShape(circle);
             PointState pointState = new PointState(model, shapes);
 
             pointState.HandleMouseDown(150, 210);
