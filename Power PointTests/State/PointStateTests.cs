@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Drawing;
 
 namespace Power_Point.Tests
 {
@@ -28,11 +29,11 @@ namespace Power_Point.Tests
         public void HandleMouseMoveTest()
         {
             Model model = new Model();
-            Shapes shapes = (Shapes)GetPrivateField(model, "_shapes");
-            Shape circle = new Circle(20, 30, 140, 180);
-            model.AddCurrentPageShape(circle);
-            PointState pointState = new PointState(model, shapes);
+            Pages pages = (Pages)GetPrivateField(model, "_pages");
+            model.PushAddCommand(Symbol.CIRCLE, new Point(20, 30), new Point(140, 180));
+            Shape circle = pages.CurrentShapeManager[0];
 
+            PointState pointState = new PointState(model, pages.CurrentShapes);
             pointState.HandleMouseDown(150, 210);
             pointState.HandleMouseMove(80, 140);
 

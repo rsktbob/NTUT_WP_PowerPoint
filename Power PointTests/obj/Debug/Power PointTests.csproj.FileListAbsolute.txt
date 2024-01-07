@@ -115,7 +115,6 @@ D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\zh-Hant\Microsoft.VisualStud
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\clientSecret.json
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Power PointTests.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Power PointTests.pdb
-D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Appium.Net.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Castle.Core.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
@@ -131,7 +130,6 @@ D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Google.Apis.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Google.Apis.Core.dll
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Power Point.pdb
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Power Point.exe.config
-D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Appium.Net.xml
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Castle.Core.xml
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\C#\NTUT_WP_PowerPoint\Power PointTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml

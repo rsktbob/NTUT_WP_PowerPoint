@@ -33,7 +33,6 @@ d:\Documents\Desktop\hw7\Power Point\obj\Debug\Power Point.pdb
 D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\Power Point.exe.config
 D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\Power Point.exe
 D:\C#\NTUT_WP_PowerPoint\Power Point\bin\Debug\Power Point.pdb
-D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power Point.csproj.AssemblyReference.cache
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.AddShapeForm.resources
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.Form.resources
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.Properties.Resources.resources

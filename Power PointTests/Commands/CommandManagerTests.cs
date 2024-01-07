@@ -29,50 +29,50 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void ExecuteCommandTest()
         {
-            Model model = new Model();
-            CommandManager commandManager = (CommandManager)GetPrivateField(model, "_commandManager");
-            ICommand command = new AddCommand(model, Symbol.CIRCLE);
+            Shapes shapes = new Shapes();
+            CommandManager commandManager = new CommandManager();
+            ICommand command = new AddCommand(shapes, Symbol.CIRCLE, 3, 14, 6, 18);
 
             commandManager.ExecuteCommand(command);
 
-            Assert.AreEqual(1, model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, shapes.ShapeManager.Count);
         }
 
         // Redo command test
         [TestMethod()]
         public void RedoTest()
         {
-            Model model = new Model();
-            CommandManager commandManager = (CommandManager)GetPrivateField(model, "_commandManager");
-            ICommand command = new AddCommand(model, Symbol.RECTANGLE);
+            Shapes shapes = new Shapes();
+            CommandManager commandManager = new CommandManager();
+            ICommand command = new AddCommand(shapes, Symbol.RECTANGLE, 3, 14, 6, 18);
             commandManager.Redo();
 
             commandManager.ExecuteCommand(command); ;
             commandManager.Undo();
 
-            Assert.AreEqual(0, model.CurrentShapeManager.Count);
+            Assert.AreEqual(0, shapes.ShapeManager.Count);
 
             commandManager.Redo();
 
-            Assert.AreEqual(1, model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, shapes.ShapeManager.Count);
         }
 
         // Undo command test
         [TestMethod()]
         public void UndoTest()
         {
-            Model model = new Model();
-            CommandManager commandManager = (CommandManager)GetPrivateField(model, "_commandManager");
-            ICommand command = new AddCommand(model, Symbol.CIRCLE);
+            Shapes shapes = new Shapes();
+            CommandManager commandManager = new CommandManager();
+            ICommand command = new AddCommand(shapes, Symbol.CIRCLE, 3, 14, 6, 18);
             commandManager.Undo();
 
             commandManager.ExecuteCommand(command);
 
-            Assert.AreEqual(1, model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, shapes.ShapeManager.Count);
 
             commandManager.Undo();
 
-            Assert.AreEqual(0, model.CurrentShapeManager.Count);
+            Assert.AreEqual(0, shapes.ShapeManager.Count);
         }
 
         // Get private field

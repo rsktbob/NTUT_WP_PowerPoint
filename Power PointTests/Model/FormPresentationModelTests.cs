@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Drawing;
 
 namespace Power_Point.Tests
 {
@@ -21,8 +22,8 @@ namespace Power_Point.Tests
         {
             _model = new Model();
             _formPresentationModel = new FormPresentationModel(_model);
-            _formPresentationModel.SetCanvasSize(960, 540);
-            _formPresentationModel.SetPageSize(160, 90);
+            _formPresentationModel.UpdateCanvasSize(980, 665);
+            _formPresentationModel.UpdatePagesSize(160);
         }
 
         // FormPresentationModel constructor test
@@ -48,7 +49,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void AddShapeTest()
         {
-            _formPresentationModel.AddShape(Symbol.CIRCLE);
+            _formPresentationModel.AddShape(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
         }
@@ -57,7 +58,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void DeleteShapeTest()
         {
-            _formPresentationModel.AddShape(Symbol.CIRCLE);
+            _formPresentationModel.AddShape(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
 
@@ -101,26 +102,6 @@ namespace Power_Point.Tests
             Assert.IsFalse(_formPresentationModel.RectangleChecked);
             Assert.IsFalse(_formPresentationModel.PaintState);
             Assert.IsTrue(_formPresentationModel.GeneralChecked);
-        }
-
-        // Set canvas size
-        [TestMethod()]
-        public void SetCanvasSizeTest()
-        {
-            _formPresentationModel.SetCanvasSize(300, 500);
-
-            Assert.AreEqual(300, GetPrivateField(_model, "_canvasWidth"));
-            Assert.AreEqual(500, GetPrivateField(_model, "_canvasHeight"));
-        }
-
-        // Set small canvas size
-        [TestMethod()]
-        public void SetSmallCanvasSizeTest()
-        {
-            _formPresentationModel.SetPageSize(300, 500);
-
-            Assert.AreEqual(300, GetPrivateField(_model, "_smallCanvasWidth"));
-            Assert.AreEqual(500, GetPrivateField(_model, "_smallCanvasHeight"));
         }
 
         // Handele point pressed test
@@ -199,7 +180,7 @@ namespace Power_Point.Tests
             FormPresentationModel formPresentationModel = new FormPresentationModel(new Model());
             FormGraphicsAdapter graphics = new FormGraphicsAdapter(null);
 
-            formPresentationModel.DrawPage(graphics);
+            formPresentationModel.DrawPage(0, graphics);
         }
 
         // Press delete test
@@ -222,7 +203,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void UndoTest()
         {
-            _formPresentationModel.AddShape(Symbol.CIRCLE);
+            _formPresentationModel.AddShape(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
 
@@ -237,7 +218,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void RedoTest()
         {
-            _formPresentationModel.AddShape(Symbol.RECTANGLE);
+            _formPresentationModel.AddShape(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _formPresentationModel.CurrentShapeManager.Count);
 

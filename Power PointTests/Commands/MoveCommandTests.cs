@@ -15,11 +15,11 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void MoveCommandTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Circle(20, 60, 140, 180);
             shape.IsSelected = true;
-            model.AddCurrentPageShape(shape);
-            MoveCommand command = new MoveCommand(model, 20, 60, 90, 130);
+            shapes.AddShape(shape);
+            MoveCommand command = new MoveCommand(shapes, 20, 60, 90, 130);
 
             command.Execute();
 
@@ -33,11 +33,11 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void ExecuteTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Circle(60, 50, 140, 180);
             shape.IsSelected = true;
-            model.AddCurrentPageShape(shape);
-            MoveCommand command = new MoveCommand(model, 60, 50, 140, 160);
+            shapes.AddShape(shape);
+            MoveCommand command = new MoveCommand(shapes, 60, 50, 140, 160);
 
             command.Execute();
 
@@ -51,11 +51,11 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void ReverseExecuteTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Circle(60, 50, 140, 180);
             shape.IsSelected = true;
-            model.AddCurrentPageShape(shape);
-            MoveCommand command = new MoveCommand(model, 60, 50, 140, 160);
+            shapes.AddShape(shape);
+            MoveCommand command = new MoveCommand(shapes, 60, 50, 140, 160);
 
             command.Execute();
             command.ReverseExecute();

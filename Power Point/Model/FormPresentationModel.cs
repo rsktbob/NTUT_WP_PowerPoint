@@ -177,12 +177,6 @@ namespace Power_Point
             _model.SetState(action);
         }
 
-        // Set small canvas size
-        public void SetPageSize(int width, int height)
-        {
-            _model.PageSize = new Size(width, height);
-        }
-
         // Handele point pressed
         public void HandlePointerPressed(double pointX, double pointY)
         {

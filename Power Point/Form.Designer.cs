@@ -101,11 +101,12 @@ namespace Power_Point
             // 
             // _addShapeButton
             // 
-            this._addShapeButton.AccessibleName = "";
+            this._addShapeButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this._addShapeButton.Location = new System.Drawing.Point(17, 25);
             this._addShapeButton.Name = "_addShapeButton";
             this._addShapeButton.Size = new System.Drawing.Size(64, 41);
             this._addShapeButton.TabIndex = 3;
+            this._addShapeButton.Tag = "1";
             this._addShapeButton.Text = "新增";
             this._addShapeButton.UseVisualStyleBackColor = true;
             this._addShapeButton.Click += new System.EventHandler(this.ClickAddShapeButton);
@@ -129,9 +130,9 @@ namespace Power_Point
             this._dataGroupBox.Controls.Add(this._shapeComboBox);
             this._dataGroupBox.Controls.Add(this._addShapeButton);
             this._dataGroupBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this._dataGroupBox.Location = new System.Drawing.Point(1176, 49);
+            this._dataGroupBox.Location = new System.Drawing.Point(1167, 49);
             this._dataGroupBox.Name = "_dataGroupBox";
-            this._dataGroupBox.Size = new System.Drawing.Size(241, 665);
+            this._dataGroupBox.Size = new System.Drawing.Size(250, 665);
             this._dataGroupBox.TabIndex = 6;
             this._dataGroupBox.TabStop = false;
             this._dataGroupBox.Text = "資料顯示";
@@ -151,7 +152,7 @@ namespace Power_Point
             this._shapeDataGridView.ReadOnly = true;
             this._shapeDataGridView.RowHeadersVisible = false;
             this._shapeDataGridView.RowTemplate.Height = 24;
-            this._shapeDataGridView.Size = new System.Drawing.Size(241, 577);
+            this._shapeDataGridView.Size = new System.Drawing.Size(250, 577);
             this._shapeDataGridView.TabIndex = 8;
             this._shapeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClickDeleteShapeButton);
             // 
@@ -191,7 +192,7 @@ namespace Power_Point
             this._lineButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._lineButton.Name = "_lineButton";
             this._lineButton.Size = new System.Drawing.Size(23, 22);
-            this._lineButton.Text = "toolStripButton1";
+            this._lineButton.Text = "lineButton";
             this._lineButton.Click += new System.EventHandler(this.ClickLineButton);
             // 
             // _rectangleButton
@@ -202,18 +203,18 @@ namespace Power_Point
             this._rectangleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._rectangleButton.Name = "_rectangleButton";
             this._rectangleButton.Size = new System.Drawing.Size(23, 22);
-            this._rectangleButton.Text = "toolStripButton2";
+            this._rectangleButton.Text = "rectangleButton";
             this._rectangleButton.Click += new System.EventHandler(this.ClickRectangleButton);
             // 
             // _circleButton
             // 
-            this._circleButton.AccessibleName = "";
+            this._circleButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this._circleButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._circleButton.Image = ((System.Drawing.Image)(resources.GetObject("_circleButton.Image")));
             this._circleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._circleButton.Name = "_circleButton";
             this._circleButton.Size = new System.Drawing.Size(23, 22);
-            this._circleButton.Text = "toolStripButton3";
+            this._circleButton.Text = "circleButton";
             this._circleButton.Click += new System.EventHandler(this.ClickCircleButton);
             // 
             // _generalButton
@@ -223,7 +224,7 @@ namespace Power_Point
             this._generalButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._generalButton.Name = "_generalButton";
             this._generalButton.Size = new System.Drawing.Size(23, 22);
-            this._generalButton.Text = "toolStripButton1";
+            this._generalButton.Text = "generalButton";
             this._generalButton.Click += new System.EventHandler(this.ClickGeneralButton);
             // 
             // _addPageButton
@@ -233,7 +234,7 @@ namespace Power_Point
             this._addPageButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._addPageButton.Name = "_addPageButton";
             this._addPageButton.Size = new System.Drawing.Size(23, 22);
-            this._addPageButton.Text = "toolStripButton1";
+            this._addPageButton.Text = "addPageButton";
             this._addPageButton.Click += new System.EventHandler(this.ClickAddPageButton);
             // 
             // _undoButton
@@ -243,7 +244,7 @@ namespace Power_Point
             this._undoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._undoButton.Name = "_undoButton";
             this._undoButton.Size = new System.Drawing.Size(23, 22);
-            this._undoButton.Text = "toolStripButton1";
+            this._undoButton.Text = "undoButton";
             this._undoButton.Click += new System.EventHandler(this.ClickUndoButton);
             // 
             // _redoButton
@@ -253,7 +254,7 @@ namespace Power_Point
             this._redoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._redoButton.Name = "_redoButton";
             this._redoButton.Size = new System.Drawing.Size(23, 22);
-            this._redoButton.Text = "toolStripButton2";
+            this._redoButton.Text = "redoButton";
             this._redoButton.Click += new System.EventHandler(this.ClickRedoButton);
             // 
             // _saveButton
@@ -263,7 +264,7 @@ namespace Power_Point
             this._saveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._saveButton.Name = "_saveButton";
             this._saveButton.Size = new System.Drawing.Size(23, 22);
-            this._saveButton.Text = "toolStripButton1";
+            this._saveButton.Text = "saveButton";
             this._saveButton.Click += new System.EventHandler(this.ClickSaveButton);
             // 
             // _loadButton
@@ -273,7 +274,7 @@ namespace Power_Point
             this._loadButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._loadButton.Name = "_loadButton";
             this._loadButton.Size = new System.Drawing.Size(23, 22);
-            this._loadButton.Text = "toolStripButton2";
+            this._loadButton.Text = "downloadButton";
             this._loadButton.Click += new System.EventHandler(this.ClickLoadButton);
             // 
             // _canvasBackground
@@ -283,7 +284,7 @@ namespace Power_Point
             this._canvasBackground.Dock = System.Windows.Forms.DockStyle.Fill;
             this._canvasBackground.Location = new System.Drawing.Point(187, 49);
             this._canvasBackground.Name = "_canvasBackground";
-            this._canvasBackground.Size = new System.Drawing.Size(989, 665);
+            this._canvasBackground.Size = new System.Drawing.Size(980, 665);
             this._canvasBackground.TabIndex = 0;
             this._canvasBackground.Resize += new System.EventHandler(this.UpdateCanvasSize);
             // 
@@ -300,7 +301,7 @@ namespace Power_Point
             // 
             this._rightBorder.BackColor = System.Drawing.SystemColors.GrayText;
             this._rightBorder.Dock = System.Windows.Forms.DockStyle.Right;
-            this._rightBorder.Location = new System.Drawing.Point(1173, 49);
+            this._rightBorder.Location = new System.Drawing.Point(1164, 49);
             this._rightBorder.Name = "_rightBorder";
             this._rightBorder.Size = new System.Drawing.Size(3, 665);
             this._rightBorder.TabIndex = 14;
@@ -309,7 +310,7 @@ namespace Power_Point
             // _canvas
             // 
             this._canvas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._canvas.Location = new System.Drawing.Point(15, 44);
+            this._canvas.Location = new System.Drawing.Point(11, 43);
             this._canvas.Name = "_canvas";
             this._canvas.Size = new System.Drawing.Size(960, 540);
             this._canvas.TabIndex = 13;

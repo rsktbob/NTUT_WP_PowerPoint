@@ -130,6 +130,8 @@ namespace Power_Point
         // Push delete selected shape command
         public void PushDeleteSelectedCommand()
         {
+            if (CurrentPageSelectedShapeIndex == -1)
+                return;
             ICommand command = new DeleteSelectedCommand(_pages.CurrentShapes);
             _commandManager.ExecuteCommand(command);
             NotifyModelChanged();
@@ -174,12 +176,11 @@ namespace Power_Point
         // Push delete current page command
         public void PushDeleteCurrentPageCommand()
         {
-            if (_pages.CurrentPageIndex != -1)
-            {
-                ICommand command = new DeletePageCommand(_pages);
-                _commandManager.ExecuteCommand(command);
-                NotifyModelChanged();
-            }
+            if (_pages.CurrentPageIndex == -1)
+                return;
+            ICommand command = new DeletePageCommand(_pages);
+            _commandManager.ExecuteCommand(command);
+            NotifyModelChanged();
         }
 
         // Draw canvas

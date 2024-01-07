@@ -74,8 +74,8 @@ namespace Power_Point
         // Record shape
         private void RecordSelectedShapePosition(double pointX, double pointY)
         {
-            _recordPointX = (int)pointX;
-            _recordPointY = (int)pointY;
+            _recordPointX = (int)Math.Round(pointX);
+            _recordPointY = (int)Math.Round(pointY);
             _recordShapePointX1 = _shapes.ShapeManager[SelectedIndex].PointX1;
             _recordShapePointY1 = _shapes.ShapeManager[SelectedIndex].PointY1;
             _recordShapePointX2 = _shapes.ShapeManager[SelectedIndex].PointX2;
@@ -92,8 +92,8 @@ namespace Power_Point
             }
             else
             {
-                int width = (int)(pointX - _recordPointX);
-                int height = (int)(pointY - _recordPointY);
+                int width = (int)Math.Round(pointX - _recordPointX);
+                int height = (int)Math.Round(pointY - _recordPointY);
                 _shapes.ShapeManager[SelectedIndex].PointX1 = _recordShapePointX1 + width;
                 _shapes.ShapeManager[SelectedIndex].PointY1 = _recordShapePointY1 + height;
 

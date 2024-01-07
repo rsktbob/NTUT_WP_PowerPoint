@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 namespace Power_Point.Tests
 {
     [TestClass()]
-    public class DeleteCommandTests
+    public class DeleteSelectedCommandTests
     {
         // DeleteCommand constructor test
         [TestMethod()]
-        public void DeleteCommandTest()
+        public void DeleteSelectedCommandTest()
         {
             Shapes shapes = new Shapes();
             shapes.AddShape(new Circle(0, 0, 0, 0));
@@ -24,27 +24,31 @@ namespace Power_Point.Tests
             Assert.AreEqual(0, shapes.ShapeManager.Count);
         }
 
-        // Execute delete shape command test
+        // Execute delete selected shape command test
         [TestMethod()]
         public void ExecuteTest()
         {
             Shapes shapes = new Shapes();
-            shapes.AddShape(new Circle(0, 0, 0, 0));
+            Shape circle = new Circle(0, 0, 0, 0);
+            circle.IsSelected = true;
+            shapes.AddShape(circle);
             shapes.AddShape(new Rectangle(0, 0, 0, 0));
-            DeleteCommand command = new DeleteCommand(shapes, 1);
+            DeleteSelectedCommand command = new DeleteSelectedCommand(shapes);
 
             command.Execute();
 
             Assert.AreEqual(1, shapes.ShapeManager.Count);
         }
 
-        // Unexecute delete shape command test
+        // Unexecute delete selected shape command test
         [TestMethod()]
         public void ReverseExecuteTest()
         {
             Shapes shapes = new Shapes();
-            shapes.AddShape(new Circle(0, 0, 0, 0));
-            DeleteCommand command = new DeleteCommand(shapes, 0);
+            Shape circle = new Circle(0, 0, 0, 0);
+            circle.IsSelected = true;
+            shapes.AddShape(circle) ;
+            DeleteSelectedCommand command = new DeleteSelectedCommand(shapes);
 
             command.Execute();
 

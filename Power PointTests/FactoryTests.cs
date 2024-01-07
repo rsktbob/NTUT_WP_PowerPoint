@@ -15,17 +15,21 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void CreateShapeTest()
         {
-            Factory factory = new Factory();
-            Shape shape;
+            Factory factory1 = new Factory(Symbol.LINE);
 
-            shape = factory.CreateRandomPositionShape(Symbol.LINE, 200, 300);
-            Assert.IsInstanceOfType(shape, typeof(Line));
+            Shape shape1 = factory1.CreateShape(20, 30, 60, 140);
+            Assert.IsInstanceOfType(shape1, typeof(Line));
 
-            shape = factory.CreateRandomPositionShape(Symbol.CIRCLE, 200, 300);
-            Assert.IsInstanceOfType(shape, typeof(Circle));
 
-            shape = factory.CreateRandomPositionShape(Symbol.RECTANGLE, 200, 300);
-            Assert.IsInstanceOfType(shape, typeof(Rectangle));
+            Factory factory2 = new Factory(Symbol.RECTANGLE);
+
+            Shape shape2 = factory2.CreateShape(20, 30, 60, 140);
+            Assert.IsInstanceOfType(shape2, typeof(Rectangle));
+
+            Factory factory3 = new Factory(Symbol.CIRCLE);
+
+            Shape shape3 = factory3.CreateShape(20, 30, 60, 140);
+            Assert.IsInstanceOfType(shape3, typeof(Circle));
         }
     }
 }

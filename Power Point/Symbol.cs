@@ -27,8 +27,8 @@ namespace Power_Point
         public const int DATA_COLUMNS_SHAPE_WIDTH = 65;
         public const int DATA_COLUMNS_INFO_WIDTH = 130;
         public const int SELECTED_SHAPE_SIZE = 4;
-        public const int CANVAS_WIDTH = 969;
-        public const int CANVAS_HEIGHT = 545;
+        public const int CANVAS_WIDTH = 960;
+        public const int CANVAS_HEIGHT = 540;
         public const double CANVAS_ASPECT_RATIO = 9.0 / 16;
         public const int PAGE_WIDTH = 177;
         public const int PAGE_HEIGHT = 99;

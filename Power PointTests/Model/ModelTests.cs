@@ -20,8 +20,8 @@ namespace Power_Point.Tests
         public void ModelTestInitialize()
         {
             _model = new Model();
-            _model.SetCanvasSize(960, 540);
-            _model.SetPageSize(160, 90);
+            _model.CanvasSize = new Size(960, 540);
+            _model.PageSize = new Size(160, 90);
         }
 
         // Model constructor test
@@ -36,7 +36,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void PushAddCommandTest()
         {
-            _model.PushAddCommand(Symbol.CIRCLE);
+            _model.PushAddCommand(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _model.CurrentShapeManager.Count);
         }
@@ -45,7 +45,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void PushDeleteCommandTest()
         {
-            _model.PushAddCommand(Symbol.RECTANGLE);
+            _model.PushAddCommand(Symbol.RECTANGLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _model.CurrentShapeManager.Count);
 
@@ -58,17 +58,16 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void PushDeleteSelectedCommandTest()
         {
-            Shape shape = new Circle(20, 30, 140, 180);
-            shape.IsSelected = true;
-
             _model.PushDeleteSelectedCommand();
-            _model.AddCurrentPageShape(shape);
+            _model.PushAddCommand(Symbol.CIRCLE, new Point(3, 21), new Point(6, 54));
 
             Assert.AreEqual(1, _model.CurrentShapeManager.Count);
 
+            Shape shape = _model.CurrentShapeManager[0];
+            shape.IsSelected = true;
             _model.PushDeleteSelectedCommand();
 
-            Assert.AreEqual(0, _model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, _model.CurrentShapeManager.Count);
         }
 
         // Push draw command test
@@ -85,116 +84,51 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void PushMoveCommandTest()
         {
-            Shape shape = new Circle(20, 30, 140, 180);
-            shape.IsSelected = true;
-            _model.AddCurrentPageShape(shape);
-            _model.PushMoveCommand(20, 30, 60, 140);
+            _model.PushAddCommand(Symbol.CIRCLE, new Point(20, 30), new Point(60, 140));
+            _model.HandlePointerPressed(50, 60);
+            _model.PushMoveCommand(20, 30, 80, 210);
 
-            Assert.AreEqual(60, shape.PointX1);
-            Assert.AreEqual(140, shape.PointY1);
-            Assert.AreEqual(180, shape.PointX2);
-            Assert.AreEqual(290, shape.PointY2);
+            Shape shape = _model.CurrentShapeManager[0];
+            Assert.AreEqual(80, shape.PointX1);
+            Assert.AreEqual(210, shape.PointY1);
+            Assert.AreEqual(120, shape.PointX2);
+            Assert.AreEqual(320, shape.PointY2);
         }
 
-        // Add shape test
+        // Push move command test
         [TestMethod()]
-        public void AddShapeTest()
+        public void PushScaleCommandTest()
         {
-            _model.PushAddCommand(Symbol.CIRCLE);
+            _model.PushAddCommand(Symbol.CIRCLE, new Point(20, 30), new Point(140, 180));
             Shape shape = _model.CurrentShapeManager[0];
 
-            Assert.IsInstanceOfType(shape, typeof(Circle));
-            Assert.IsNull(_model.ModelChanged);
+            _model.HandlePointerPressed(50, 60);
 
-            _model.ModelChanged += () => { };
-            _model.PushAddCommand(Symbol.CIRCLE);
-            Assert.IsNotNull(_model.ModelChanged);
+            _model.PushScaleCommand(30, 50, 60, 140);
+
+            Assert.AreEqual(20, shape.PointX1);
+            Assert.AreEqual(30, shape.PointY1);
+            Assert.AreEqual(60, shape.PointX2);
+            Assert.AreEqual(140, shape.PointY2);
         }
 
-        //Delete shape test
+        // Push insert page command test
         [TestMethod()]
-        public void DeleteShapeTest()
+        public void PushInsertPageCommandTest()
         {
-            _model.PushAddCommand(Symbol.CIRCLE);
-            Assert.AreEqual(1, _model.CurrentShapeManager.Count);
+            _model.PushInsertPageCommand();
 
-            _model.DeleteCurrentPageShape(0);
-            Assert.AreEqual(0, _model.CurrentShapeManager.Count);
+            Assert.AreEqual(2, _model.AllPages.PageCount);
         }
 
-        // Insert shape Test
+        // Push delete current page command test
         [TestMethod()]
-        public void InsertShapeTest()
+        public void PushDeleteCurrentPageCommand()
         {
-            _model.AddCurrentPageShape(new Circle(0, 0, 0, 0));
-            _model.AddCurrentPageShape(new Rectangle(0, 0, 0, 0));
-            Shape shape = new Circle(20, 60, 140, 80);
+            _model.PushInsertPageCommand();
+            _model.PushDeleteCurrentPageCommand();
 
-            _model.InsertCurrentPageShape(1, shape);
-            Shape ResultShape = _model.CurrentShapeManager[1];
-
-            Assert.AreEqual(20, ResultShape.PointX1);
-            Assert.AreEqual(60, ResultShape.PointY1);
-            Assert.AreEqual(140, ResultShape.PointX2);
-            Assert.AreEqual(80, ResultShape.PointY2);
-        }
-
-        // Pop shape test
-        [TestMethod()]
-        public void PopShapeTest()
-        {
-            _model.AddCurrentPageShape(new Circle(20, 60, 140, 180));
-            _model.AddCurrentPageShape(new Rectangle(0, 0, 0, 0));
-
-            _model.PopCurrentPageShape();
-            Shape ResultShape = _model.CurrentShapeManager[0];
-
-            Assert.AreEqual(20, ResultShape.PointX1);
-            Assert.AreEqual(60, ResultShape.PointY1);
-            Assert.AreEqual(140, ResultShape.PointX2);
-            Assert.AreEqual(180, ResultShape.PointY2);
-        }
-
-        //Move shape test
-        [TestMethod()]
-        public void MoveShapeTest()
-        {
-            Shape shape = new Rectangle(60, 210, 80, 310);
-            shape.IsSelected = true;
-            _model.AddCurrentPageShape(shape);
-
-            _model.MoveCurrentPageShape(0, 90, 290);
-
-            Assert.AreEqual(90, shape.PointX1);
-            Assert.AreEqual(290, shape.PointY1);
-            Assert.AreEqual(110, shape.PointX2);
-            Assert.AreEqual(390, shape.PointY2);
-        }
-
-        // Set Canvas size
-        [TestMethod()]
-        public void SetCanvasSizeTest()
-        {
-            _model.SetCanvasSize(500, 600);
-            Assert.AreEqual(500, GetPrivateField(_model, "_canvasWidth"));
-            Assert.AreEqual(600, GetPrivateField(_model, "_canvasHeight"));
-
-            _model.SetCanvasSize(400, 500);
-            Assert.AreEqual(400, GetPrivateField(_model, "_canvasWidth"));
-            Assert.AreEqual(500, GetPrivateField(_model, "_canvasHeight"));
-        }
-
-        // Set small canvas size
-        [TestMethod()]
-        public void SetSmallCanvasSizeTest()
-        {
-            _model.SetPageSize(500, 600);
-            Assert.AreEqual(500, GetPrivateField(_model, "_smallCanvasWidth"));
-            Assert.AreEqual(600, GetPrivateField(_model, "_smallCanvasHeight"));
-
-            _model.SetPageSize(400, 500);
-            Assert.AreEqual(400, GetPrivateField(_model, "_smallCanvasWidth"));
-            Assert.AreEqual(500, GetPrivateField(_model, "_smallCanvasHeight"));
+            Assert.AreEqual(1, _model.AllPages.PageCount);
         }
 
         // Draw canvas test
@@ -202,7 +136,6 @@ namespace Power_Point.Tests
         public void DrawCanvasTest()
         {
             FormGraphicsAdapter graphics = new FormGraphicsAdapter(null);
-            _model.SetCanvasSize(500, 600);
 
             _model.DrawCanvas(graphics);
 
@@ -213,16 +146,15 @@ namespace Power_Point.Tests
 
         // Draw small canvas test
         [TestMethod()]
-        public void DrawSamllCanvasTest()
+        public void DrawPageTest()
         {
             FormGraphicsAdapter graphics = new FormGraphicsAdapter(null);
-            _model.SetPageSize(500, 600);
 
-            _model.DrawPage(graphics);
+            _model.DrawPage(0, graphics);
 
             _model.SetState(Symbol.CIRCLE);
 
-            _model.DrawPage(graphics);
+            _model.DrawPage(0, graphics);
         }
 
         // Set paint state test
@@ -309,7 +241,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void UndoTest()
         {
-            _model.PushAddCommand(Symbol.CIRCLE);
+            _model.PushAddCommand(Symbol.CIRCLE, new Point(20, 30), new Point(60, 140));
 
             _model.Undo();
 
@@ -320,7 +252,7 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void RedoTest()
         {
-            _model.PushAddCommand(Symbol.RECTANGLE);
+            _model.PushAddCommand(Symbol.RECTANGLE, new Point(20, 30), new Point(60, 140));
 
             _model.Undo();
 

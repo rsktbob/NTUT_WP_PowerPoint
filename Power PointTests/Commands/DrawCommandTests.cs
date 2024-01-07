@@ -15,28 +15,28 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void DrawCommandTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Circle(20, 60, 140, 180);
-            DrawCommand command = new DrawCommand(model, shape);
+            DrawCommand command = new DrawCommand(shapes, shape);
 
             command.Execute();
 
-            Assert.AreEqual(1, model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, shapes.ShapeManager.Count);
         }
 
         // Excute draw command test
         [TestMethod()]
         public void ExecuteTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Rectangle(20, 60, 140, 180);
-            DrawCommand command = new DrawCommand(model, shape);
+            DrawCommand command = new DrawCommand(shapes, shape);
 
             command.Execute();
 
-            Assert.AreEqual(1, model.CurrentShapeManager.Count);
+            Assert.AreEqual(1, shapes.ShapeManager.Count);
 
-            Shape resultShape = model.CurrentShapeManager[0];
+            Shape resultShape = shapes.ShapeManager[0];
 
             Assert.AreEqual(20, resultShape.PointX1);
             Assert.AreEqual(60, resultShape.PointY1);
@@ -48,14 +48,14 @@ namespace Power_Point.Tests
         [TestMethod()]
         public void ReverseExecuteTest()
         {
-            Model model = new Model();
+            Shapes shapes = new Shapes();
             Shape shape = new Rectangle(20, 60, 140, 180);
-            DrawCommand command = new DrawCommand(model, shape);
+            DrawCommand command = new DrawCommand(shapes, shape);
 
             command.Execute();
             command.ReverseExecute();
 
-            Assert.AreEqual(0, model.CurrentShapeManager.Count);
+            Assert.AreEqual(0, shapes.ShapeManager.Count);
         }
     }
 }

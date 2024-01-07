@@ -102,6 +102,23 @@ namespace Power_Point.Tests
             Assert.AreEqual(310, shape.PointY2);
         }
 
+        // Scale test
+        [TestMethod()]
+        public void ScaleShapeTest()
+        {
+            Shape shape = new Circle(20, 30, 60, 140);
+            shape.IsSelected = true;
+            Shapes shapes = new Shapes();
+            shapes.AddShape(shape);
+
+            shapes.ScaleShape(0, 80, 180);
+
+            Assert.AreEqual(20, shape.PointX1);
+            Assert.AreEqual(30, shape.PointY1);
+            Assert.AreEqual(80, shape.PointX2);
+            Assert.AreEqual(180, shape.PointY2);
+        }
+
         // Draw test
         [TestMethod()]
         public void DrawTest()

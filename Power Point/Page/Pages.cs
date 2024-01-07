@@ -89,6 +89,8 @@ namespace Power_Point
         // Load file data
         public void LoadFileData(List<List<Shape>> fileData)
         {
+            if (fileData == null)
+                return;
             PageManager.Clear();
             for (int i = 0; i < fileData.Count; i++)
             {
