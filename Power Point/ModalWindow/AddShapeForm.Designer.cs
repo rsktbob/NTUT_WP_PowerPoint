@@ -149,6 +149,7 @@ namespace Power_Point
             this.Controls.Add(this._leftUpYLabel);
             this.Controls.Add(this._leftUpXLabel);
             this.Name = "AddShapeForm";
+            this.Text = "AddShapeForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

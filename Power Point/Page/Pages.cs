@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace Power_Point
 {
@@ -76,6 +77,7 @@ namespace Power_Point
         // Delete page
         public void DeletePage(int index)
         {
+            Debug.Assert(index != -1);
             PageManager.RemoveAt(index);
             CurrentPageIndex = index >= 1 ? index - 1 : index;
         }
@@ -83,6 +85,9 @@ namespace Power_Point
         // Set current page index
         public void SetCurrentPageIndex(int index)
         {
+            const string ERROR_INDEX = "error index";
+            if (index < 0)
+                throw new Exception(ERROR_INDEX);
             CurrentPageIndex = index;
         }
 

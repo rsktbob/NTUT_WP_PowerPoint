@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Forms;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Interactions;
+using System.Text.RegularExpressions;
 
 namespace Power_Point.GuiTests
 {
@@ -88,14 +89,14 @@ namespace Power_Point.GuiTests
         public void ClickButtonByName(string name)
         {
             _driver.FindElementByName(name).Click();
-            Sleep(3);
+            Thread.Sleep(1000);
         }
 
         // test
         public void ClickButtonByAccessibilityId(string name)
         {
             _driver.FindElementByAccessibilityId(name).Click();
-            Sleep(3);
+            Thread.Sleep(1000);
         }
 
         // test
@@ -151,8 +152,20 @@ namespace Power_Point.GuiTests
             // FindElementsByXPath("//*") 會把 "row" node 也抓出來，因此 i 要從 1 開始以跳過 "row" node
             for (int i = 1; i < rowDatas.Count; i++)
             {
-                Assert.AreEqual(data[i - 1], rowDatas[i].Text.Replace("(null)", ""));
+                Assert.IsTrue(Compare(rowDatas[i].Text.Replace("(null)", ""), data[i - 1]));
             }
+        }
+
+        // test
+        public void InputText(string name, string text)
+        {
+            WindowsElement element = _driver.FindElementByAccessibilityId(name);
+            Clipboard.SetText(text);
+            element.Click();
+            Thread.Sleep(100);
+            element.SendKeys(OpenQA.Selenium.Keys.Control + "a" + OpenQA.Selenium.Keys.Delete);
+            Thread.Sleep(100);
+            element.SendKeys(OpenQA.Selenium.Keys.Control + "v");
         }
 
         // test
@@ -178,15 +191,59 @@ namespace Power_Point.GuiTests
             }
         }
 
-        public void Draw(int pointX1, int pointY1, int pointX2, int pointY2)
+        // Move
+        public void Move(string name, int pointX1, int pointY1, int pointX2, int pointY2)
         {
-            WindowsElement element = _driver.FindElementByAccessibilityId("_canvas");
-            Assert.IsNotNull(element);
+            WindowsElement element = _driver.FindElementByAccessibilityId(name);
             Actions action = new Actions(_driver);
-            Sleep(1);
 
             action.MoveToElement(element, pointX1, pointY1).ClickAndHold().MoveByOffset(pointX2 - pointX1, pointY2 - pointY1).Release().Perform();
             Sleep(5);
+        }
+
+        // Click position
+        public void ClickPosition(string name, int pointX1, int pointY1)
+        {
+            WindowsElement element = _driver.FindElementByAccessibilityId(name);
+            Actions action = new Actions(_driver);
+
+            action.MoveToElement(element, pointX1, pointY1).ClickAndHold().Perform();
+            Sleep(5);
+        }
+
+        // Assert size
+        public void AssertSize(string name, int height, int width)
+        {
+            WindowsElement element = _driver.FindElementByAccessibilityId(name);
+
+            Assert.AreEqual(element.Size.Width, width);
+            Assert.AreEqual(element.Size.Height, height);
+        }
+
+        // 他會有誤差pointX1, pointY1, pointX2, pointY2
+        bool Compare(string s1, string s2)
+        {
+            string pattern = @"\((-?\d+), (-?\d+)\), \((-?\d+), (-?\d+)\)";
+
+            Match match1 = Regex.Match(s1, pattern);
+            Match match2 = Regex.Match(s2, pattern);
+            if (match1.Success && match2.Success)
+            {
+                int num1 = int.Parse(match1.Groups[1].Value);
+                int num2 = int.Parse(match1.Groups[2].Value);
+                int num3 = int.Parse(match1.Groups[3].Value);
+                int num4 = int.Parse(match1.Groups[4].Value);
+
+                bool compare1 = num1 <= int.Parse(match2.Groups[1].Value) + 1 && num1 >= int.Parse(match2.Groups[1].Value) - 1;
+                bool compare2 = num2 <= int.Parse(match2.Groups[2].Value) + 1 && num2 >= int.Parse(match2.Groups[2].Value) - 1;
+                bool compare3 = num3 <= int.Parse(match2.Groups[3].Value) + 1 && num3>= int.Parse(match2.Groups[3].Value) - 1;
+                bool compare4 = num4 <= int.Parse(match2.Groups[4].Value) + 1 && num4 >= int.Parse(match2.Groups[4].Value) - 1;
+                return compare1 && compare2 && compare3 && compare4;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

@@ -84,11 +84,15 @@
     <Compile Include="Commands\AddCommandTests.cs" />
     <Compile Include="Commands\CommandManagerTests.cs" />
     <Compile Include="Commands\DeleteCommandTests.cs" />
+    <Compile Include="Commands\DeleteCurrentPageCommandTests.cs" />
     <Compile Include="Commands\DeleteSelectedCommandTests.cs" />
     <Compile Include="Commands\DrawCommandTests.cs" />
     <Compile Include="Commands\InsertPageCommandTests.cs" />
     <Compile Include="Commands\MoveCommandTests.cs" />
+    <Compile Include="Commands\ScaleCommandTests.cs" />
     <Compile Include="Components\DoubleBufferedPanelTests.cs" />
+    <Compile Include="EventArguments\FileDataEventArgumentsTests.cs" />
+    <Compile Include="EventArguments\ShapeEventArgumentsTests.cs" />
     <Compile Include="FactoryTests.cs" />
     <Compile Include="Page\PagesTests.cs" />
     <Compile Include="Shape\CircleTests.cs" />

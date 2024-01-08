@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Power_Point
 {
-    public class DeletePageCommand : ICommand
+    public class DeleteCurrentPageCommand : ICommand
     {
         private Pages _pages;
         private Shapes _shapes;
         private int _index;
 
-        public DeletePageCommand(Pages pages)
+        public DeleteCurrentPageCommand(Pages pages)
         {
             _pages = pages;
             _shapes = pages.PageManager[pages.CurrentPageIndex];

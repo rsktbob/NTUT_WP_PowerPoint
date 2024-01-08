@@ -1,0 +1,45 @@
+<stylecopresultscache>
+  <version>12</version>
+  <project key="-1387229169">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="FormTests.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2023/12/17 07:25:19.188</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2024/01/07 21:13:55.687</sourceFile>
+      <parser>2023/12/17 07:25:19.188</parser>
+      <KellyPalRules.KellyPalAnalyzer>2023/12/17 07:25:19.188</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2023/12/17 07:25:19.188</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2024/01/06 13:53:21.785</sourceFile>
+      <parser>2023/12/17 07:25:19.188</parser>
+      <KellyPalRules.KellyPalAnalyzer>2023/12/17 07:25:19.188</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Robot.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2023/12/17 07:25:19.188</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2024/01/07 21:01:39.840</sourceFile>
+      <parser>2023/12/17 07:25:19.188</parser>
+      <KellyPalRules.KellyPalAnalyzer>2023/12/17 07:25:19.188</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.CsParser" rule="SyntaxException" ruleCheckId="SA0102">
+        <context>A syntax error has been discovered in file D:\C#\NTUT_WP_PowerPoint\Power PointGuiTests\Robot.cs on line 129.</context>
+        <line>129</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+</stylecopresultscache>

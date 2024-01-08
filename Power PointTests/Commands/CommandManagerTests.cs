@@ -25,6 +25,24 @@ namespace Power_Point.Tests
             Assert.AreEqual(0, undoStack.Count);
         }
 
+        [TestMethod()]
+        // Reset command text
+        public void Clear()
+        {
+            Shapes shapes = new Shapes();
+            CommandManager commandManager = new CommandManager();
+            ICommand command = new AddCommand(shapes, Symbol.CIRCLE, 3, 14, 6, 18);
+
+            commandManager.ExecuteCommand(command);
+            commandManager.Clear();
+
+            Stack<ICommand> redoStack = (Stack<ICommand>)GetPrivateField(commandManager, "_redoStack");
+            Stack<ICommand> undoStack = (Stack<ICommand>)GetPrivateField(commandManager, "_undoStack");
+
+            Assert.AreEqual(0, redoStack.Count);
+            Assert.AreEqual(0, undoStack.Count);
+        }
+
         // Execute command test
         [TestMethod()]
         public void ExecuteCommandTest()

@@ -52,10 +52,9 @@ namespace Power_Point
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(GoogleClientSecrets.Load(stream).Secrets, _scopes, USER, CancellationToken.None, new FileDataStore(credentialPath, true)).Result;
             }
             DriveService service = new DriveService(new BaseClientService.Initializer()
-            {
+            { 
                 HttpClientInitializer = credential,
-                ApplicationName = applicationName
-            });
+                ApplicationName = applicationName });
             _credential = credential;
             DateTime now = DateTime.Now;
             _timeStamp = UNIXNowTimeStamp;
@@ -162,9 +161,8 @@ namespace Power_Point
             string title = GetTitleFromFileName(uploadFileName);
 
             Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File
-            {
-                Title = title
-            };
+            { 
+                Title = title };
             FilesResource.InsertMediaUpload insertRequest = _service.Files.Insert(fileToInsert, uploadStream, contentType);
             insertRequest.ChunkSize = FilesResource.InsertMediaUpload.MinimumChunkSize * Symbol.TWO;
 

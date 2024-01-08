@@ -86,3 +86,4 @@ C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power Point.csproj.
 C:\大學課程\視窗程式設計\hw7\Power Point\obj\Debug\Power_Point.SaveForm.resources
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.SaveForm.resources
 D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power_Point.LoadForm.resources
+D:\C#\NTUT_WP_PowerPoint\Power Point\obj\Debug\Power Point.csproj.AssemblyReference.cache

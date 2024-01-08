@@ -30,6 +30,7 @@ namespace Power_Point.Tests
         {
             Assert.AreEqual(0, _model.CurrentShapeManager.Count);
             Assert.IsFalse(_model.IsScaling);
+            Assert.AreEqual(0, _model.CurrentPageIndex);
         }
 
         // Push add command test
@@ -276,6 +277,14 @@ namespace Power_Point.Tests
             {
                 return null;
             }
+        }
+
+        [TestMethod()]
+        public void PressDeleteTest()
+        {
+            _model.PressDelete();
+            _model.PushInsertPageCommand();
+            _model.PressDelete();
         }
     }
 }

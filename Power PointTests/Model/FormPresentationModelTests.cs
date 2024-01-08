@@ -22,8 +22,13 @@ namespace Power_Point.Tests
         {
             _model = new Model();
             _formPresentationModel = new FormPresentationModel(_model);
+            _formPresentationModel.UpdateCanvasSize(980, 240);
             _formPresentationModel.UpdateCanvasSize(980, 665);
             _formPresentationModel.UpdatePagesSize(160);
+
+            Assert.AreEqual(1, _formPresentationModel.PagesCount);
+            Assert.AreEqual(0, _formPresentationModel.CurrentPageIndex);
+            Assert.AreEqual(1, _formPresentationModel.PageManager.Count);
         }
 
         // FormPresentationModel constructor test
@@ -210,6 +215,39 @@ namespace Power_Point.Tests
             _formPresentationModel.Undo();
 
             Assert.AreEqual(0, _formPresentationModel.CurrentShapeManager.Count);
+        }
+        // Insert new page test
+        [TestMethod()]
+        public void InsertPageTest()
+        {
+            _formPresentationModel.InsertPage();
+
+            Assert.AreEqual(2, _formPresentationModel.PagesCount);
+        }
+
+        // Set current page index test
+        [TestMethod()]
+        public void SetCurrentPageIndexTest()
+        {
+            _formPresentationModel.SetCurrentPageIndex(0);
+
+            Assert.AreEqual(0, _formPresentationModel.CurrentPageIndex);
+        }
+
+        // Get pages position test
+        [TestMethod()]
+        public void GetPagePositionTest()
+        {
+            Point resultPoint = _formPresentationModel.GetPagePosition(0);
+
+            Assert.AreEqual(resultPoint, new Point(5, 10));
+        }
+
+        // Load file data test
+        [TestMethod()]
+        public void LoadFileData()
+        {
+            _formPresentationModel.LoadFileData(null);
         }
 
         // Redo Test
