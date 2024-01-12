@@ -219,390 +219,54 @@
             </Smell>
             <Smell>
               <Id>3</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ClickDrawShapeTest 缺乏註解</SmellType>
-              <HashCode>Power PointGuiTests\Power PointGuiTests.FormTests.cs.Unresolved warnings(忽視警告)-函式 ClickDrawShapeTest 缺乏註解.31</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointGuiTests\Power PointGuiTests</Project>
-              <File>FormTests.cs</File>
-              <Line>31</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>4</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 UndoAndRedoTest 缺乏註解</SmellType>
-              <HashCode>Power PointGuiTests\Power PointGuiTests.FormTests.cs.Unresolved warnings(忽視警告)-函式 UndoAndRedoTest 缺乏註解.59</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointGuiTests\Power PointGuiTests</Project>
-              <File>FormTests.cs</File>
-              <Line>59</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>5</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 Clear 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.CommandManagerTests.cs.Unresolved warnings(忽視警告)-函式 Clear 缺乏註解.28</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>CommandManagerTests.cs</File>
-              <Line>28</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>6</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 DeleteCurrentPageCommandTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.DeleteCurrentPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 DeleteCurrentPageCommandTest 缺乏註解.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>DeleteCurrentPageCommandTests.cs</File>
-              <Line>14</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>7</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.DeleteCurrentPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解.25</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>DeleteCurrentPageCommandTests.cs</File>
-              <Line>25</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>8</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.DeleteCurrentPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解.38</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>DeleteCurrentPageCommandTests.cs</File>
-              <Line>38</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>9</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 InsertPageCommandTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.InsertPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 InsertPageCommandTest 缺乏註解.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>InsertPageCommandTests.cs</File>
-              <Line>14</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>10</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.InsertPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解.25</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>InsertPageCommandTests.cs</File>
-              <Line>25</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>11</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.InsertPageCommandTests.cs.Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解.37</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>InsertPageCommandTests.cs</File>
-              <Line>37</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>12</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ScaleCommandTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.ScaleCommandTests.cs.Unresolved warnings(忽視警告)-函式 ScaleCommandTest 缺乏註解.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>ScaleCommandTests.cs</File>
-              <Line>14</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>13</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.ScaleCommandTests.cs.Unresolved warnings(忽視警告)-函式 ExecuteTest 缺乏註解.31</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>ScaleCommandTests.cs</File>
-              <Line>31</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>14</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.ScaleCommandTests.cs.Unresolved warnings(忽視警告)-函式 ReverseExecuteTest 缺乏註解.48</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>ScaleCommandTests.cs</File>
-              <Line>48</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>15</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 FileDataEventArgumentsTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.FileDataEventArgumentsTests.cs.Unresolved warnings(忽視警告)-函式 FileDataEventArgumentsTest 缺乏註解.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>FileDataEventArgumentsTests.cs</File>
-              <Line>14</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>16</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 ShapeEventArgumentsTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.ShapeEventArgumentsTests.cs.Unresolved warnings(忽視警告)-函式 ShapeEventArgumentsTest 缺乏註解.15</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>ShapeEventArgumentsTests.cs</File>
-              <Line>15</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>17</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 PressDeleteTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.ModelTests.cs.Unresolved warnings(忽視警告)-函式 PressDeleteTest 缺乏註解.282</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>ModelTests.cs</File>
-              <Line>282</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>18</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 PagesTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 PagesTest 缺乏註解.14</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>14</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>19</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 MoveCurrentPageShapeTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 MoveCurrentPageShapeTest 缺乏註解.22</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>22</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>20</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 InsertPageTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 InsertPageTest 缺乏註解.41</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>41</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>21</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 DeletePageTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 DeletePageTest 缺乏註解.50</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>50</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>22</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 SetCurrentPageIndexTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 SetCurrentPageIndexTest 缺乏註解.61</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>61</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>23</Id>
-              <SmellType>Unresolved warnings(忽視警告)-函式 LoadFileDataTest 缺乏註解</SmellType>
-              <HashCode>Power PointTests\Power PointTests.PagesTests.cs.Unresolved warnings(忽視警告)-函式 LoadFileDataTest 缺乏註解.72</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>Power PointTests\Power PointTests</Project>
-              <File>PagesTests.cs</File>
-              <Line>72</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>24</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>62 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UpdateFile(string, string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <HashCode>58 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UpdateFile(string, string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
-              <Line>62</Line>
-              <StartLine>61</StartLine>
+              <Line>58</Line>
+              <StartLine>57</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>62</EndLine>
+              <EndLine>58</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UpdateFile(string, string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>25</Id>
+              <Id>4</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>64 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UploadFile(string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
+              <HashCode>60 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UploadFile(string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
-              <Line>64</Line>
-              <StartLine>63</StartLine>
+              <Line>60</Line>
+              <StartLine>59</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>64</EndLine>
+              <EndLine>60</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UploadFile(string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>26</Id>
+              <Id>5</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>79 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</HashCode>
+              <HashCode>75 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>Power Point</Project>
               <File>D:\C#\NTUT_WP_PowerPoint\Power Point\ModalWindow\SaveForm.cs</File>
-              <Line>79</Line>
-              <StartLine>78</StartLine>
+              <Line>75</Line>
+              <StartLine>74</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>79</EndLine>
+              <EndLine>75</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>27</Id>
+              <Id>6</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>39 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
               <Severity>Red</Severity>
@@ -618,7 +282,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>28</Id>
+              <Id>7</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>41 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：6次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：7次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</HashCode>
               <Severity>Red</Severity>
@@ -634,7 +298,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>29</Id>
+              <Id>8</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>246 目前物件 Power_Point.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</HashCode>
               <Severity>Warning</Severity>
@@ -650,7 +314,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>30</Id>
+              <Id>9</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>149 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Appium.AppiumWebElement，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：OpenQA.Selenium.Appium.AppiumWebElement.FindElementByName(string) 以及 OpenQA.Selenium.Appium.AppiumWebElement.FindElementsByXPath(string)</HashCode>
               <Severity>Warning</Severity>
@@ -666,7 +330,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>31</Id>
+              <Id>10</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>152 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Appium.AppiumWebElement，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：OpenQA.Selenium.Appium.AppiumWebElement.FindElementByName(string) 以及 OpenQA.Selenium.Appium.AppiumWebElement.FindElementsByXPath(string)</HashCode>
               <Severity>Warning</Severity>
@@ -682,7 +346,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>32</Id>
+              <Id>11</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>200 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Interactions.Actions，使用物件方法或屬性次數：5次，使用到的方法或屬性為以下：OpenQA.Selenium.Interactions.Actions.MoveToElement(OpenQA.Selenium.IWebElement, int, int) 以及 OpenQA.Selenium.Interactions.Actions.ClickAndHold() 以及 OpenQA.Selenium.Interactions.Actions.MoveByOffset(int, int) 以及 OpenQA.Selenium.Interactions.Actions.Release() 以及 OpenQA.Selenium.Interactions.Actions.Perform()</HashCode>
               <Severity>Red</Severity>
@@ -698,7 +362,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>33</Id>
+              <Id>12</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>210 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Interactions.Actions，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：OpenQA.Selenium.Interactions.Actions.MoveToElement(OpenQA.Selenium.IWebElement, int, int) 以及 OpenQA.Selenium.Interactions.Actions.ClickAndHold() 以及 OpenQA.Selenium.Interactions.Actions.Perform()</HashCode>
               <Severity>Red</Severity>
@@ -716,14 +380,13 @@
           </Reviews>
           <HashCodeIgnoreList />
           <HashCodeRequestIgnoreList>
-            <string>62 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UpdateFile(string, string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</string>
-            <string>64 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.UploadFile(string, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</string>
-            <string>79 目前物件 Power_Point.SaveForm，使用物件的方法或屬性次數：0次，Envy到對象物件 Power_Point.Shapes，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Power_Point.Shapes.ShapeManager 以及 Power_Point.Shapes.ShapeManager</string>
             <string>39 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：3次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：4次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</string>
             <string>41 目前物件 Power_Point.LoadForm，使用物件的方法或屬性次數：6次，Envy到對象物件 Power_Point.GoogleDriveService，使用物件方法或屬性次數：7次，使用到的方法或屬性為以下：Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder() 以及 Power_Point.GoogleDriveService.GetGoogleFileText(Google.Apis.Drive.v2.Data.File, string) 以及 Power_Point.GoogleDriveService.ListRootFileAndFolder()</string>
             <string>149 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Appium.AppiumWebElement，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：OpenQA.Selenium.Appium.AppiumWebElement.FindElementByName(string) 以及 OpenQA.Selenium.Appium.AppiumWebElement.FindElementsByXPath(string)</string>
             <string>152 目前物件 Power_Point.GuiTests.Robot，使用物件的方法或屬性次數：0次，Envy到對象物件 OpenQA.Selenium.Appium.AppiumWebElement，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：OpenQA.Selenium.Appium.AppiumWebElement.FindElementByName(string) 以及 OpenQA.Selenium.Appium.AppiumWebElement.FindElementsByXPath(string)</string>
             <string xsi:nil="true" />
+            <string>Power Point\Power Point.GoogleDriveService.cs.Unresolved warnings(忽視警告)-'GoogleClientSecrets.Load(Stream)' 已經過時: 'Please use GoogleClientSecrets.FromStream which is an equivalent alternative.'.52</string>
+            <string>246 目前物件 Power_Point.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</string>
           </HashCodeRequestIgnoreList>
           <AnalysisFileManager>
             <AnalysisFiles>
@@ -1069,8 +732,8 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>3600</ProductionLoc>
-          <TestLoc>2059</TestLoc>
+          <ProductionLoc>3599</ProductionLoc>
+          <TestLoc>2080</TestLoc>
         </CodeReview>
       </Data>
     </div>
